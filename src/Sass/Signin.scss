@@ -1,0 +1,30 @@
+@import "../Sass/variables.scss";
+
+.signin {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  .details{
+    padding: 2rem 25rem;
+    border: 1px solid black;
+
+    li {
+        list-style: none;
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+        padding-left: 0px;
+      }
+      .form-label {
+        font-size: 1.4rem;
+        padding-top: 1rem;
+      }
+      .form-control{
+        width: 56%;
+      }
+      .forgetpassword a {
+        color: $black;
+      }
+  }
+  
+}

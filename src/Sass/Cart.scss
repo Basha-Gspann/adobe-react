@@ -1,0 +1,137 @@
+@import '../Sass/variables.scss';
+
+.cart {
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        padding-top: 2rem;
+        font-family: Source Serif Pro, Semibold;
+    }
+
+    hr {
+        height: 0.6rem !important;
+        width: 7%;
+        background-color: $blue  !important;
+        margin-bottom: 3rem;
+        margin-left: 37rem !important;
+        opacity: 3;
+    }
+
+    .product {
+        display: flex;
+        padding-top: 0px;
+        text-align: left;
+
+        img {
+            padding-bottom: 2rem;
+        }
+
+        div:last-child {
+            padding-left: 2rem;
+            padding-top: 1rem;
+        }
+
+        h6 {
+            font-weight: 400;
+        }
+
+        h5 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+
+    .badge {
+        color: $black;
+    }
+
+    .input-group {
+        padding-top: 3.3rem;
+
+        .border {
+            width: 2rem;
+            height: 2rem;
+            background-color: transparent;
+            border: 2px #B5B7BC solid !important;
+            color: #B5B7BC;
+        }
+
+        .quant {
+            border: 2px #B5B7BC solid;
+            width: 4rem;
+            height: 2rem;
+            text-align: center;
+            border-radius: 6px !important;
+            padding-top: 5px;
+            margin-top: 0.4rem;
+        }
+
+        p:last-child {
+            font-size: .9rem;
+        }
+    }
+
+    .icon {
+        padding-top: 1.5rem;
+
+        p{
+            font-size: .8rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .checkout{
+        border: 2px #D1D3D6 solid;
+        padding: 2rem;
+        box-shadow: 5px 10px 8px 10px #0000000d;
+        border-radius: 0.3rem;
+        h5{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        h6{
+            font-size: 1.1rem;
+            font-weight: 400;
+            padding-top: 1rem;
+        }
+        button{
+            padding-top: 1rem;
+        }
+        .check{
+            border: none;
+            background-color: #1F39FF;
+            color: white;
+            padding: 8px 70px;
+            border-radius: 2rem;
+            margin-top: 1rem;
+        }
+        .pay{
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+
+.buttons{
+    text-align: center;
+}
+
+// Result start 
+
+.acco-right{
+    padding-left: 19rem;
+}
+
+// Recently Viewed
+
+.caro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    // background-color: #00008B;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1em;
+}

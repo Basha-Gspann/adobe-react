@@ -1,0 +1,84 @@
+@import "../Sass/variables.scss";
+
+.footer {
+  padding: 1rem 0;
+
+  h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  ul li {
+    font-size: 1.1rem;
+    padding-top: 0.4rem;
+    color: $gray;
+  }
+  p {
+    font-size: 0.9rem;
+    color: $gray;
+  }
+  ul {
+    padding-left: 0 !important;
+  }
+  a {
+    color: $gray;
+  }
+}
+
+.footer-copy {
+  .foot-venia {
+    padding-bottom: 2rem;
+
+    .logo{
+      position: relative;
+    }
+
+    .logo h2 {
+      font-size: 2rem;
+      font-family: "Righteous", cursive;
+      color: $black !important;
+      text-transform: uppercase;
+    }
+    .logo span {
+      display: inline-block;
+      margin: 0;
+      line-height: 1em;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      background: linear-gradient(to right, #1c87c9 50%, $black 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .terms {
+      display: flex;
+      justify-content: end;
+
+      p:last-child {
+        padding-right: 1rem;
+        color: #172026;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 0;
+  }
+  .footer h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: 2rem;
+  }
+  .logo{
+    display: none;
+  }
+  .footerp{
+    text-align: center;
+  }
+  .terms{
+    display: none !important;
+  }
+}

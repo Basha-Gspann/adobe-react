@@ -1,0 +1,97 @@
+@import "../Sass/variables.scss";
+
+.herosection {
+  .cardr {
+    background-color: #1b252c;
+    margin: 26px 0;
+    padding: 0.3rem;
+    h1 {
+      color: $white;
+      text-align: center;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+      font-size: 3rem;
+      letter-spacing: 4px;
+      font-family: Source Serif Pro;
+    }
+    hr {
+      height: 0.8rem !important;
+      width: 23%;
+      background-color: $blue;
+      border: none;
+      margin-bottom: 6rem;
+      margin-left: 15rem;
+      opacity: 3;
+    }
+  }
+  .card-img img {
+    width: 100%;
+    margin-top: 3rem;
+    height: 280px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+// Media Quries
+
+@media only screen and (max-width: 768px) {
+
+  .herosection .desk {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .back img {
+    width: 100%;
+  }
+  .herosection .card{
+    margin: -10rem 2rem 3rem 2rem;
+  }
+  .card h1{
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .card hr {
+      height: 0.7rem !important;
+      width: 18% !important;
+      margin-bottom: 4rem !important;
+      margin-left: 20rem !important;
+    }
+}
+
+@media only screen and (max-width: 426px){
+  .herosection .card {
+    margin: -5rem 2rem 3rem 2rem !important;
+}
+.card h1 {
+  padding-top: 3rem !important;
+  padding-bottom: 0rem !important;
+}
+  .card hr {
+    width: 37% !important;
+    margin-left: 8rem !important;
+    margin-bottom: 2rem !important;
+
+}
+}
+
+@media only screen and (max-width: 320px){
+  .herosection .card {
+    margin: -3rem 1rem 1rem 1rem !important;
+}
+.herosection .card h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+}
+.herosection .card hr {
+  height: 0.5rem !important;
+  width: 38%;
+  border: none;
+  margin-bottom: 2rem;
+  margin-left: 6rem !important;
+}
+}

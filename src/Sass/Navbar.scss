@@ -1,0 +1,70 @@
+@import "../Sass/variables.scss";
+@import "../Sass//mixin.scss";
+
+.navbar {
+  .logo{
+  position: relative;
+  }
+  .logo h2 {
+    font-size: 2rem;
+    font-family: "Righteous", cursive;
+    color: $black !important;
+    text-transform: uppercase;
+  }
+  .logo span {
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #1c87c9 50%, $black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ul li {
+    font-weight: 600;
+    color: $black;
+  }
+
+  .buttons {
+    font-size: 18px;
+    padding-right: 1rem;
+
+    a {
+      padding-right: 2rem;
+      color: black;
+    }
+    .login {
+      @include nav;
+      padding-left: 5px;
+    }
+    .signin {
+      @include nav;
+    }
+    .cart {
+      @include nav;
+
+      .btn-success {
+        color: white;
+        border: 2px solid;
+        padding: 0px 6px;
+        border-radius: 12px;
+      }
+    }
+  }
+  .navbar-nav a {
+    font-size: 16px;
+  }
+}
+
+.navbar-brand {
+  font-family: "Source Serif Pro", serif;
+}
+
+@media only screen and (max-width:993px) {
+  .navdesk {
+        display: none;
+      }
+}

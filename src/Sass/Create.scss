@@ -1,0 +1,18 @@
+@import '../Sass/variables.scss';
+
+.cancle a{
+    color:$black;
+}
+.create{
+    padding-top:35px;
+    padding-bottom:20px;
+
+    .create li{
+        list-style: none;   
+    }
+    .create ul{
+        display: flex;
+        gap:20px;
+        padding-left: 0px;
+    }
+}

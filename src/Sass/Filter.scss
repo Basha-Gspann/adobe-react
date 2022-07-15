@@ -1,0 +1,157 @@
+@import '../Sass/variables.scss';
+@import '../Sass/mixin.scss';
+
+.filter {
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 3rem 0;
+  }
+  .dropdown{
+    text-align: right;
+    padding-top: 0.8rem;
+  }
+  button{
+    font-size: 1.5rem;
+    color: $black;
+  }
+  button:hover{
+    color: $black;
+    background-color: transparent;
+  }
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 2rem;
+  }
+  h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $black;
+  }
+  ul{
+    padding-left: 0 !important;
+
+    li {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: .6rem;
+    }
+  }
+  .showmore p {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    color: $black;
+    text-decoration: underline;
+  }
+}
+  .filter hr {
+    margin: 1rem 0;
+    width: 85%;
+  }
+  
+  .filter label {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .filter input#option {
+    width: 1.4rem;
+    height: 1.9rem;
+    vertical-align: bottom;
+  }
+  
+  /* Colors */
+  
+  
+  .filter-color {
+    margin-top: 1rem;
+
+    .color {
+      @include filter-color(#172026);
+    }
+    
+    .color1 {
+      @include filter-color(#dfe1e2);
+    }
+    
+    .color2 {
+      @include filter-color(#2d9d78);
+    }
+    
+    .color3 {
+      @include filter-color(#fdba5e);
+    }
+    
+    .color4 {
+      @include filter-color(#7950e8);
+    }
+    
+    .color5 {
+      @include filter-color(#e34850);
+    }
+    
+    .color6 {
+      @include filter-color(#6408d3);
+    }
+    
+    .color7 {
+      @include filter-color(#f9009a);
+    }
+    
+    .color8 {
+      @include filter-color(#eb7327);
+    }
+    
+    .color9 {
+      @include filter-color(#39473d);
+    }
+  }
+
+  
+  // breadcrumbs start 
+
+
+.dropdown{
+  // margin-left: 25rem;
+  margin-top: -10px;
+}
+
+.bread{
+  padding-top: 1rem;
+}
+
+.bread .mobile{
+  display: none;
+}
+
+// Media Quries
+
+@media only screen and (max-width: 768px){
+  .bread .desk{
+    display: none;
+  }
+  
+  .bread .mobile{
+    display: block;
+  }
+  .mobile .cato{
+      font-size: 1.5rem;
+  }
+  .mobile h5{
+    padding-top: 2rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .mobile h6{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .filter{
+    display: none;
+  }
+}
+
+  
