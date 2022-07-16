@@ -34,7 +34,7 @@ class Signin extends Component {
                         <div>
                             <ul>
                                 <li>
-                                    <FiArrowLeft size={23}/>
+                                <Link to="/"><FiArrowLeft size={23}/></Link>
                                 </li>
                                 <li>
                                     <FiUser size={23}/>
