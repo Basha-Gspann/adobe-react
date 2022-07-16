@@ -72,7 +72,7 @@ const Products = ({ category }) => {
         {currentItems?.map((product) => {
           return (
             <>
-              <div className="col-md-4 col-sm-6 col-xs-6">
+              <div className="col-md-4 col-sm-6 col-6">
                 <div className="card h-100 text-center p-4" key={product.id}>
                   <NavLink to={`/products/${product.id}`}>
                     <img

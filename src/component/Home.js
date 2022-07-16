@@ -17,7 +17,7 @@ function Home({category}) {
             
             <Filter />
         </div>
-        <div class="aem-GridColumn aem-GridColumn--default--9">
+        <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
          <Products category={category} />
         </div>
         </div>
