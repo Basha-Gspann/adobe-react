@@ -1,7 +1,7 @@
-@import '../Sass/variables.scss';
-@import '../Sass/mixin.scss';
+@import "../Sass/variables.scss";
+@import "../Sass/mixin.scss";
 
-.product-details{
+.product-details {
   p:first-child {
     font-size: 1rem;
   }
@@ -11,7 +11,7 @@
   }
   h5 {
     font-weight: 600;
-    padding: .3rem 0;
+    padding: 0.3rem 0;
   }
   .desc {
     font-size: 1.1rem;
@@ -25,22 +25,22 @@
   .product-colors {
     img {
       padding-left: 0px;
-  }
-  .colorone {
-    @include product-color(#3d84ff);
-  }
-  
-  .colortwo {
-    @include product-color(#c21273);
-  }
-  
-  .colorthree {
-    @include product-color(#172026);
-  }
-  
-  .colorfour {
-    @include product-color(#b5b8ba);
-  }
+    }
+    .colorone {
+      @include product-color(#3d84ff);
+    }
+
+    .colortwo {
+      @include product-color(#c21273);
+    }
+
+    .colorthree {
+      @include product-color(#172026);
+    }
+
+    .colorfour {
+      @include product-color(#b5b8ba);
+    }
   }
   .size {
     padding-bottom: 1rem;
@@ -50,7 +50,7 @@
       height: 35px;
       margin-right: 10px;
       background-color: $white;
-      border-color: #91959C;
+      border-color: #91959c;
     }
   }
   .save a {
@@ -93,6 +93,60 @@
   padding-top: 0px;
 }
 
-.small img{
+.small img {
   padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .pro-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-details p:first-child {
+    display: none;
+}
+.product-details h1 {
+  padding-top: 3rem;
+}
+.Producttitle h1 {
+  font-size: 1.3rem;
+  padding-right: 0rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+.Producttitle h5 {
+  text-align: center;
+}
+.Producttitle hr {
+  width: 12%;
+  margin: 0px 21rem;
+  margin-top: 2rem;
+}
+}
+
+@media only screen and (max-width: 320px) {
+  .pro-img {
+    width: 90%;
+    height: 280px;
+}
+.product-details h1 {
+  font-size: 1.6rem;
+}
+.product-details .product-colors .cola {
+  margin-right: 4px;
+}
+.product-details .size button {
+  width: 53px;
+  height: 35px;
+  margin-right: 6px;
+}
+.product-details .addtocart {
+  font-size: .9rem;
+}
+.Producttitle hr {
+  width: 20%;
+  margin: 0px 8rem;
+  margin-top: 2rem;
+}
 }

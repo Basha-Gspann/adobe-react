@@ -19,7 +19,7 @@ export default function Basket(props) {
       <hr />
       <div className="aem-Grid aem-Grid--12">
         {cartItems.length === 0 && <div>Cart is empty</div>}
-        <div className="aem-GridColumn aem-GridColumn--default--8">
+        <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
           {cartItems.map((item) => (
             <div key={item.id} className="aem-Grid aem-Grid--12">
               <div className="aem-GridColumn aem-GridColumn--default--6 badge">
@@ -35,8 +35,8 @@ export default function Basket(props) {
                   </div>
                 </div>
               </div>
-              <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="input-group w-auto align-items-center">
+              <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
+                {/* <div class="input-group w-auto align-items-center">
                   <input
                     type="button"
                     value="-"
@@ -52,6 +52,13 @@ export default function Basket(props) {
                     data-field="quantity"
                     onClick={() => onAdd(item)}
                   />
+                </div> */}
+                <div className="group">
+                <p>
+                  <button className="border" onClick={() => onRemove(item)}>-</button>&nbsp;&nbsp;
+                  <span className="quant">{item.qty}</span>&nbsp;&nbsp;
+                  <button className="border" onClick={() => onAdd(item)}>+</button>
+                </p>
                 </div>
               </div>
 
@@ -62,9 +69,12 @@ export default function Basket(props) {
               </div>
             </div>
           ))}
+          <div className="accordian">
+          <Accordian />
+          </div>
         </div>
 
-        <div className="aem-GridColumn aem-GridColumn--default--4 checkout">
+        <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 checkout">
           {cartItems.length !== 0 && (
             <>
             <h5>Pricing Summary</h5>
@@ -106,11 +116,11 @@ export default function Basket(props) {
 
       {/* Accordion */}
 
-      <div className="aem-Grid aem-Grid--12">
+      {/* <div className="aem-Grid aem-Grid--12">
         <div className="aem-GridColumn aem-GridColumn--default--7">
         <Accordian />
         </div>
-      </div>
+      </div> */}
 
       {/* Recently Viewed */}
 
