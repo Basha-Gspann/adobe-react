@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import ReactPaginate from "react-paginate";
 import "../Sass/Products.scss";
-import { FiHeart } from 'react-icons/fi';
+import { FiHeart } from "react-icons/fi";
 
 const itemsPerPage = 12;
 
@@ -12,7 +12,7 @@ const Products = ({ category }) => {
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
   let componentMounted = true;
-  
+
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
@@ -68,12 +68,11 @@ const Products = ({ category }) => {
     };
     return (
       <>
-
         {currentItems?.map((product) => {
           return (
             <>
               <div className="col-md-4 col-sm-6 col-6">
-                <div className="card h-100 text-center p-4" key={product.id}>
+                <div className="card h-100 text-center" key={product.id}>
                   <NavLink to={`/products/${product.id}`}>
                     <img
                       src={product.image}
@@ -87,7 +86,7 @@ const Products = ({ category }) => {
                       {product.title.substring(0, 18)}
                     </h5>
                     <p className="card-text lead ">${product.price}</p>
-                    < FiHeart size={25} color={'black'} />
+                    <FiHeart size={25} color={"black"} />
                   </div>
                 </div>
               </div>
@@ -123,8 +122,7 @@ const Products = ({ category }) => {
   return (
     <div className="product">
       <div className="container">
-        <div className="row">
-        </div>
+        <div className="row"></div>
         <div className="row">{loading ? <Loading /> : <ShowProducts />}</div>
       </div>
     </div>

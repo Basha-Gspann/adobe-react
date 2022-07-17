@@ -6,12 +6,37 @@
 
 .card{
     border: none !important;
+    padding: 1.5rem;
     .card-body{
         text-align: left;
         p{
             font-weight: 500;
             font-size: 1rem;
         }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .small{
+        display: none;
+    }
+    .p-4 {
+        padding: 0 !important;
+    }
+    .card-body h5{
+        height: 3rem !important;
+    }
+    .card {
+        padding: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .card img{
+        height: 180px;
+    }
+    .card-body h5{
+        font-size: 1.1rem;
     }
 }
 

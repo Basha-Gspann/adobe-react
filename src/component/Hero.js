@@ -7,21 +7,39 @@ function Hero() {
     <>
       <div className="container herosection">
         <div class="aem-Grid aem-Grid--12 desk">
-          <div class="aem-GridColumn aem-GridColumn--default--5">
+          <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
             <div class="cardr">
               <h1>women's</h1>
               <hr />
             </div>
           </div>
-          <div class="aem-GridColumn aem-GridColumn--default--7">
+          <div class="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
             <div class="card-img">
               <img src={hero} alt="" />
             </div>
           </div>
         </div>
-      </div>
+        </div>
 
-      <div className="herosection mobile">
+        <div className="herosection mobileh">
+        <div class="aem-Grid aem-Grid--12">
+      <div class="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
+            <div class="card-img">
+              <img src={hero} alt="" />
+            </div>
+          </div>
+
+          <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
+            <div class="cardr">
+              <h1>Women’s <br/>Outerwear</h1>
+              <hr />
+            </div>
+          </div>
+          
+        </div>
+        </div>
+
+      {/* <div className="herosection mobile">
         <div className="back">
           <img src={hero} alt="" />
           <div className="cardr">
@@ -29,7 +47,7 @@ function Hero() {
           <hr />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -35,16 +35,13 @@ const Navmob = ({ setCategory, selectedCategory, ...props }) => {
           <div class="logo">
             {/* <span class="">Cart  < FiSearch /><FiShoppingBag/></span> */}
             <div className="logomob">
-              <h1>
-                <NavLink to="/">VENIA</NavLink>
-              </h1>
+            <h2><a href="/"><span>V</span>ENIA</a></h2>
             </div>
             <NavLink to="/login" className="loginmob">
-              {" "}
-              <FiSearch />
+              <FiSearch size={25}/>&nbsp;&nbsp;&nbsp;&nbsp;
             </NavLink>
-            <NavLink to="/signin" className="signmob">
-              <FiShoppingBag />
+            <NavLink to="" className="loginmob">
+              <FiShoppingBag size={25}/>
             </NavLink>
             {/* <NavLink to="/cart" className="btn btn-outline-dark ms-2"> <i className="fa fa-shopping-cart me-1"></i>Cart(0)</NavLink> */}
             <NavLink to="/cart" className="cart">

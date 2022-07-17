@@ -31,67 +31,58 @@
   }
 }
 
-.mobile {
+.mobileh {
   display: none;
 }
 
 // Media Quries
 
 @media only screen and (max-width: 768px) {
-
   .herosection .desk {
     display: none;
   }
-  .mobile {
+  .mobileh {
     display: block;
+    margin-top: -3rem;
   }
-  .back img {
-    width: 100%;
+  .cardr {
+    margin-top: -6rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
   }
-  .herosection .card{
-    margin: -10rem 2rem 3rem 2rem;
+  .herosection .cardr h1 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    letter-spacing: 2px;
   }
-  .card h1{
-    padding-top: 5rem !important;
-    padding-bottom: 2rem !important;
+  .herosection .cardr hr {
+    width: 24%;
+    margin-left: 19rem;
   }
-  .card hr {
-      height: 0.7rem !important;
-      width: 18% !important;
-      margin-bottom: 4rem !important;
-      margin-left: 20rem !important;
-    }
 }
 
-@media only screen and (max-width: 426px){
-  .herosection .card {
-    margin: -5rem 2rem 3rem 2rem !important;
+@media only screen and (max-width: 426px) {
+  .herosection .cardr hr {
+    width: 34%;
+    margin-left: 8rem;
+    height: 0.6rem !important;
+  }
 }
-.card h1 {
-  padding-top: 3rem !important;
-  padding-bottom: 0rem !important;
+
+@media only screen and (max-width: 375px) {
+  .herosection .cardr hr {
+    width: 36% !important;
+    margin-left: 7rem !important;
+  }
 }
-  .card hr {
+
+@media only screen and (max-width: 320px) {
+  .herosection .cardr h1 {
+    font-size: 2.4rem;
+  }
+  .herosection .cardr hr {
     width: 37% !important;
-    margin-left: 8rem !important;
-    margin-bottom: 2rem !important;
-
-}
-}
-
-@media only screen and (max-width: 320px){
-  .herosection .card {
-    margin: -3rem 1rem 1rem 1rem !important;
-}
-.herosection .card h1 {
-  font-size: 2.6rem;
-  letter-spacing: 1px;
-}
-.herosection .card hr {
-  height: 0.5rem !important;
-  width: 38%;
-  border: none;
-  margin-bottom: 2rem;
-  margin-left: 6rem !important;
-}
+    margin-left: 6rem !important;
+    margin-bottom: 2rem;
+  }
 }

@@ -63,7 +63,20 @@
   }
 }
 
+.mobile{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .desk{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+    text-align: center;
+  }
   .footer {
     padding: 0;
   }
@@ -72,13 +85,13 @@
     font-weight: 600;
     padding-top: 2rem;
   }
-  .logo{
-    display: none;
-  }
-  .footerp{
-    text-align: center;
-  }
-  .terms{
-    display: none !important;
-  }
+  .footer-copy .foot-venia .terms {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+p:last-child {
+  margin-bottom: 18px;
+}
 }

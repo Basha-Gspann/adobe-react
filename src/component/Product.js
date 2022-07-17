@@ -62,7 +62,7 @@ const Product = (props) => {
                     <img src={product.image} alt={product.title} height="100px" width="120px" />
                     <img src={product.image} alt={product.title} height="100px" width="120px" />
                     </div>
-                    <div className='aem-GridColumn aem-GridColumn--default--6'>
+                    <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                     <img src={product.image} alt={product.title} height="400px" width="400px" />
                     </div>
                 </div>
@@ -127,14 +127,14 @@ const Product = (props) => {
                         <h5>Description</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit amet ipsum dolor sit amet, consectetur. Duis tristique sollicitudin nibh sit amet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</p>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                         <div className='Details'>
                             <h5> Details</h5>
                             <h6> < TbLeaf size={22}/>&nbsp;&nbsp;&nbsp;Sweat-wicking</h6>
                             <h6> < BiSitemap size={22}/>&nbsp;&nbsp;&nbsp;Breathable</h6>
                         </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                         <div className='detailsone'>
                         <h5>&nbsp;</h5>
                             <h6> < BiSitemap size={22}/>&nbsp;&nbsp;&nbsp;Lightweight fabric</h6>
