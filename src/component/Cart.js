@@ -4,7 +4,6 @@ import "../Sass/Cart.scss";
 import { BiPencil,BiTrash,BiHeart,BiLockAlt } from 'react-icons/bi';
 import { FiLock } from 'react-icons/fi';
 import Pay from '../Images/pay1.png'
-import Carousel from "./Carousel";
 import Accordian from "./Accordian";
 
 export default function Basket(props) {
@@ -126,7 +125,7 @@ export default function Basket(props) {
 
       {/* <div>
       <h1>Recently Viewed</h1>
-        <Carousel />
+        
       
       </div> */}
     </div>
