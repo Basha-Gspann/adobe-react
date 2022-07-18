@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sass/Footer.scss";
+import "../../Sass/Footer.scss";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 const Footer = () => {

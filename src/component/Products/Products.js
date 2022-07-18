@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import ReactPaginate from "react-paginate";
-import "../Sass/Products.scss";
+import "../../Sass/Products.scss";
 import { FiHeart } from "react-icons/fi";
 
 const itemsPerPage = 12;

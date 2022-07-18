@@ -1,10 +1,9 @@
 import React from "react";
-import Result from "./Result";
-import "../Sass/Cart.scss";
+import "../../Sass/Cart.scss";
 import { BiPencil,BiTrash,BiHeart,BiLockAlt } from 'react-icons/bi';
 import { FiLock } from 'react-icons/fi';
-import Pay from '../Images/pay1.png'
-import Accordian from "./Accordian";
+import Pay from '../../Images/pay1.png'
+import Accordian from "../Products/Accordian";
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;

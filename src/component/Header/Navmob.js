@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sass/Navmob.scss";
+import "../../Sass/Navmob.scss";
 import { FiShoppingBag, FiSearch } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 

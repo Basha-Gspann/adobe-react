@@ -1,16 +1,16 @@
 import './App.scss';
-import Home from './component/Home';
-import Navbar from './component/Navbar';
+import Home from './component/Products/Home';
+import Navbar from './component/Header/Navbar';
 import { Routes, Route } from 'react-router-dom';
-import Products from './component/Products';
-import Product from './component/Product';
-import Cart from './component/Cart';
+import Products from './component/Products/Products';
+import Product from './component/Products/Product';
+import Cart from './component/Header/Cart';
 import { useEffect, useState } from 'react';
-import Footer from './component/Footer';
-import Signin from './component/Signin';
-import Signout from './component/Signout';
-import Signup from "./component/Create";
-import Navmob from './component/Navmob';
+import Footer from './component/Footer/Footer';
+import Signin from './component/Header/Signin';
+import Signout from './component/Header/Signout';
+import Signup from "./component/Header/Create";
+import Navmob from './component/Header/Navmob';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

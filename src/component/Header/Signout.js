@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sass/Signout.scss";
+import "../../Sass/Signout.scss";
 import { Link } from "react-router-dom";
 import { FiArrowLeft, FiUser } from "react-icons/fi";
 

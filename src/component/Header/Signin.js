@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "../Sass/Signin.scss"
+import "../../Sass/Signin.scss"
 import { Link } from "react-router-dom";
 import {FiArrowLeft,FiUser} from "react-icons/fi";
 

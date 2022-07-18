@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sass/Filter.scss";
+import "../../Sass/Filter.scss";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Dropdown from 'react-bootstrap/Dropdown';

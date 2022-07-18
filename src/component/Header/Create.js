@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "../Sass/Create.scss"
+import "../../Sass/Create.scss"
 // import user from "../Images/user.jpg"
 // import arrowleft from "../Images/arrow-left.jpg"
 import { Link } from "react-router-dom";
