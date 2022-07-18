@@ -51,8 +51,8 @@ const Product = (props) => {
     return (
       <>
         <div className="product-details container">
-          <div class="aem-Grid aem-Grid--12 new">
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+          <div className="aem-Grid aem-Grid--12 new">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--3 small">
                   <img
@@ -91,7 +91,7 @@ const Product = (props) => {
                 </div>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <p>Clothing / Women’s / Outerwear</p>
               <h1>{product.title}</h1>
               <h5>${product.price}</h5>
@@ -140,9 +140,9 @@ const Product = (props) => {
           </div>
         </div>
         <div className="Producttitle">
-          <div class="aem-Grid aem-Grid--12">
+          <div className="aem-Grid aem-Grid--12">
             <h1>{product.title}</h1>
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <h5>Description</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -155,7 +155,7 @@ const Product = (props) => {
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
             <h5> Details</h5>
               <div className="aem-Grid aem-Grid--12">
-                <div class="aem-GridColumn aem-GridColumn--default--6">
+                <div className="aem-GridColumn aem-GridColumn--default--6">
                   <div className="Details">
                     <h6>
                       <TbLeaf size={22} />
@@ -167,7 +167,7 @@ const Product = (props) => {
                     </h6>
                   </div>
                 </div>
-                <div class="aem-GridColumn aem-GridColumn--default--6">
+                <div className="aem-GridColumn aem-GridColumn--default--6">
                   <div className="detailsone">
                     <h6>
                       <BiSitemap size={22} />

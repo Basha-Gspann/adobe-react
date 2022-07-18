@@ -9,8 +9,8 @@ import {RiArrowUpDownLine} from "react-icons/ri";
 function Breadcrum() {
   return (
     <div className="container bread">
-      <div class="aem-Grid aem-Grid--12 desk">
-        <div class="aem-GridColumn aem-GridColumn--default--3">
+      <div className="aem-Grid aem-Grid--12 desk">
+        <div className="aem-GridColumn aem-GridColumn--default--3">
           <div>
             <Breadcrumbs aria-label="breadcrumb">
               <Link underline="hover" color="text.primary" href="/">

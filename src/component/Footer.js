@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <>
       <hr />
-      <div class="container">
-        <div class="footer">
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+      <div className="container">
+        <div className="footer">
+          <div className="aem-Grid aem-Grid--12">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="footer_account">
                 <h6>Account</h6>
                 <ul className="footer_account_one">
@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="footer_account">
                 <h6>About Us</h6>
                 <ul className="footer_aboutus">
@@ -39,7 +39,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="footer_account">
                 <h6>Help</h6>
                 <ul className="footer_help_one">
@@ -55,7 +55,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="footer_account">
                 <h6>Follow Us!</h6>
                 <p>
@@ -73,28 +73,28 @@ const Footer = () => {
       <hr />
       <div className="container">
         <div className="footer-copy desk">
-          <div class="aem-Grid aem-Grid--12 foot-venia">
-            <div class="aem-GridColumn aem-GridColumn--default--4">
+          <div className="aem-Grid aem-Grid--12 foot-venia">
+            <div className="aem-GridColumn aem-GridColumn--default--4">
               <div className="logo">
                 <h2>
                   <span>V</span>ENIA
                 </h2>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <div className="footerp">
                 <p>© Company Name Address Ave, City Name, State ZIP</p>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--2">
+            <div className="aem-GridColumn aem-GridColumn--default--2">
               <div className="terms">
                 <div>
-                  <a href="" class="">
+                  <a href="" className="">
                     <p>Terms of Use</p>
                   </a>
                 </div>
                 <div>
-                  <a href="" class="">
+                  <a href="" className="">
                     <p>Privacy Policy</p>
                   </a>
                 </div>
@@ -107,12 +107,12 @@ const Footer = () => {
           <div className="foot-venia">
             <div className="terms">
               <div>
-                <a href="" class="">
+                <a href="/">
                   <p>Terms of Use</p>
                 </a>
               </div>
               <div>
-                <a href="" class="">
+                <a href="/">
                   <p>Privacy Policy</p>
                 </a>
               </div>

@@ -28,55 +28,43 @@ function Signout() {
       <div>
         <a href="" className="">
           <p>Store Credit & Gift Cards</p>{" "}
-        </a>{" "}
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Favorites Lists</p>{" "}
-        </a>{" "}
+          <p>Favorites Lists</p>
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Address Book</p>{" "}
-        </a>{" "}
+          <p>Address Book</p>
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Saved Payments</p>{" "}
-        </a>{" "}
+          <p>Saved Payments</p>
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Communications</p>{" "}
-        </a>{" "}
+          <p>Communications</p>
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Account Information</p>{" "}
-        </a>{" "}
+          <p>Account Information</p>
+        </a>
       </div>
 
       <div>
-        {" "}
         <a href="" className="">
-          {" "}
-          <p>Sign out</p>{" "}
-        </a>{" "}
+          <p>Sign out</p>
+        </a>
       </div>
     </div>
   );

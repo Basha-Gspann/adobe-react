@@ -33,7 +33,7 @@ function Filter() {
                 </li>
             </ul>
             <div className="showmore">
-              <a href="#show" class="">
+              <a href="#show" className="">
                 <p>show more</p>
               </a>
             </div>
@@ -81,43 +81,43 @@ function Filter() {
                 </div>
 
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color1"></div>
+                <div className="color1"></div>
                 </div>
 
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color2"></div>
+                <div className="color2"></div>
                 </div>
 
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color3"></div>
-                </div>
-            </div>
-
-            <div className="filter-color aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color4"></div>
-                </div>
-
-                <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color5"></div>
-                </div>
-
-                <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color6"></div>
-                </div>
-
-                <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color7"></div>
+                <div className="color3"></div>
                 </div>
             </div>
 
             <div className="filter-color aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color8"></div>
+                <div className="color4"></div>
                 </div>
 
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color9"></div>
+                <div className="color5"></div>
+                </div>
+
+                <div className="aem-GridColumn aem-GridColumn--default--3">
+                <div className="color6"></div>
+                </div>
+
+                <div className="aem-GridColumn aem-GridColumn--default--3">
+                <div className="color7"></div>
+                </div>
+            </div>
+
+            <div className="filter-color aem-Grid aem-Grid--12">
+                <div className="aem-GridColumn aem-GridColumn--default--3">
+                <div className="color8"></div>
+                </div>
+
+                <div className="aem-GridColumn aem-GridColumn--default--3">
+                <div className="color9"></div>
                 </div>
             </div>
           </>

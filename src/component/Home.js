@@ -12,12 +12,12 @@ function Home({category}) {
         <div>
         <Breadcrum/>
         </div>
-        <div class="aem-Grid aem-Grid--12 container">
-        <div class="aem-GridColumn aem-GridColumn--default--3">
+        <div className="aem-Grid aem-Grid--12 container">
+        <div className="aem-GridColumn aem-GridColumn--default--3">
             
             <Filter />
         </div>
-        <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+        <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
          <Products category={category} />
         </div>
         </div>

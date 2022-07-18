@@ -35,11 +35,11 @@ export default function Basket(props) {
                 </div>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
-                {/* <div class="input-group w-auto align-items-center">
+                {/* <div className="input-group w-auto align-items-center">
                   <input
                     type="button"
                     value="-"
-                    class="button-minus border rounded-circle"
+                    className="button-minus border rounded-circle"
                     data-field="quantity"
                     onClick={() => onRemove(item)}
                   />&nbsp;&nbsp;
@@ -47,7 +47,7 @@ export default function Basket(props) {
                   <input
                     type="button"
                     value="+"
-                    class="button-plus border rounded-circle"
+                    className="button-plus border rounded-circle"
                     data-field="quantity"
                     onClick={() => onAdd(item)}
                   />
