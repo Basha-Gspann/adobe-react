@@ -1,16 +1,26 @@
 import { Component } from "react";
-import "../../Sass/Signin.scss";
+import "../../Sass/Signup.scss";
 import { Link } from "react-router-dom";
 import { FiArrowLeft, FiUser } from "react-icons/fi";
 
-class Signin extends Component {
+class Create extends Component {
   constructor() {
     super();
     this.state = {
+      myfirst: "",
+      mylast: "",
       myname: "",
       mypass: "",
     };
   }
+
+  myFirstchange = (event) => {
+    this.setState({ myfirst: event.target.value });
+  };
+
+  myLastchange = (event) => {
+    this.setState({ mylast: event.target.value });
+  };
 
   myNamechange = (event) => {
     this.setState({ myname: event.target.value });
@@ -26,7 +36,7 @@ class Signin extends Component {
 
   render() {
     return (
-      <div className="signin">
+      <div className="signup">
         <div className="container">
           <form onSubmit={this.mySubmitfunction}>
             <div className="details">
@@ -45,8 +55,29 @@ class Signin extends Component {
                   </li>
                 </ul>
               </div>
+
               <hr />
-              <h3>Sign-in to Your Account</h3>
+              <h3>Create an Account</h3>
+
+              <label htmlfor="exampleInputPassword1" className="">
+                First name
+              </label>
+              <input
+                type="text"
+                onChange={this.myPasschange}
+                className=""
+                id="exampleInputtext1"
+              />
+
+              <label htmlfor="exampleInputtext1" className="">
+                Last name
+              </label>
+              <input
+                type="text"
+                onChange={this.myPasschange}
+                className=""
+                id="exampleInputtext1"
+              />
 
               <label htmlfor="exampleInputEmail1" className="">
                 Email address
@@ -71,22 +102,21 @@ class Signin extends Component {
               />
 
               <div className="">
-                <a href="">
-                  <p>Forget password?</p>
-                </a>
-                <button>
-                  <a>
-                    <Link to="/signup">Create Account?</Link>
-                  </a>
-                </button>
-
-                <div className="submit">
-                  <button>
-                    <Link to="">Submit</Link>
-                  </button>
-                </div>
+                
+                <label className="form-check-label" for="exampleCheck1">
+                <input
+                  type="checkbox"
+                  id="exampleCheck1"
+                />&nbsp;&nbsp;
+                  Send me news and updates
+                </label>
               </div>
-              <div></div>
+
+              <div>
+                <button>
+                  <Link to="">Submit</Link>
+                </button>
+              </div>
             </div>
           </form>
         </div>
@@ -94,4 +124,4 @@ class Signin extends Component {
     );
   }
 }
-export default Signin;
+export default Create;

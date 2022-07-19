@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import Footer from './component/Footer/Footer';
 import Signin from './component/Header/Signin';
 import Signout from './component/Header/Signout';
-import Signup from "./component/Header/Create";
+import Signup from "./component/Header/Signup";
 import Navmob from './component/Header/Navmob';
 
 function App() {

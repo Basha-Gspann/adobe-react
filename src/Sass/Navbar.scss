@@ -10,6 +10,10 @@
     font-family: "Righteous", cursive;
     color: $black !important;
     text-transform: uppercase;
+
+    a{
+      color: $black;
+    }
   }
   .logo span {
     display: inline-block;
