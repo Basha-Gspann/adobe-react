@@ -5,10 +5,9 @@ import { Routes, Route } from 'react-router-dom';
 import Products from './component/Products/Products';
 import Product from './component/Products/Product';
 import Cart from './component/Header/Cart';
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import Footer from './component/Footer/Footer';
 import Signin from './component/Header/Signin';
-import Signout from './component/Header/Signout';
 import Signup from "./component/Header/Signup";
 import Navmob from './component/Header/Navmob';
 
@@ -40,7 +39,7 @@ function App() {
     }
   };
 
-  const getCategory = () => category;
+  // const getCategory = () => category;
   return (
     <>
       <Navbar countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
