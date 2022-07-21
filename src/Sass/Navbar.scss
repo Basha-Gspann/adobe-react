@@ -30,6 +30,9 @@
   ul li {
     font-weight: 600;
     color: $black;
+    a{
+      color: $black;
+    }
   }
 
   .buttons {
@@ -37,7 +40,7 @@
     padding-right: 1rem;
 
     a {
-      padding-right: 2rem;
+      padding-left: 1rem;
       color: black;
     }
     .login {
@@ -58,8 +61,11 @@
       }
     }
   }
-  .navbar-nav a {
-    font-size: 16px;
+  .navbar-nav {
+    padding-left: 14rem;
+    a {
+      font-size: 16px;
+    }
   }
 }
 

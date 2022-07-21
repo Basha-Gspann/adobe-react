@@ -115,6 +115,13 @@
 .dropdown{
   // margin-left: 25rem;
   margin-top: -10px;
+  padding-left: 0.7rem;
+}
+
+.btn-outline-secondary:hover{
+  color: $black !important;
+  border-color: #6c757d;
+  background-color: transparent !important;
 }
 
 .bread{

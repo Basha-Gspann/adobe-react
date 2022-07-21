@@ -7,19 +7,19 @@ import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 const categories = [
   {
     filter: "women's clothing",
-    displayName: "Women",
+    displayName: <a href="#">Women</a>,
   },
   {
     filter: "men's clothing",
-    displayName: "Men",
+    displayName: <a href="#">Men</a>,
   },
   {
     filter: "jewelery",
-    displayName: "Smart Gear",
+    displayName: <a href="#">Smart Gear</a>,
   },
   {
     filter: "electronics",
-    displayName: "Accessories",
+    displayName: <a href="#">Accessories</a>,
   },
 ];
 const Navbar = ({ setCategory, selectedCategory, ...props }) => {
@@ -46,11 +46,11 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
             </ul>
             <div className="buttons">
               <NavLink to="/login" className="login">
-                <FiSearch size={25}/>&nbsp;
+                <FiSearch size={25}/>
                 Search
               </NavLink>
               <NavLink to="/signin" className="signin">
-                <FiUser size={25}/>&nbsp;
+                <FiUser size={25}/>
                 Signin
               </NavLink>
               {/* <NavLink to="/cart" className="btn btn-outline-dark ms-2"> <i className="fa fa-shopping-cart me-1"></i>Cart(0)</NavLink> */}
@@ -68,6 +68,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
           </div>
         </div>
       </nav>
+      <hr />
     </div>
   );
 };

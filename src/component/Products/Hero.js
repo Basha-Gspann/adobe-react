@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Sass/Hero.scss";
-import hero from "../../Images/hero.jfif";
+import hero from "../../Images/hero.jpg";
 
 function Hero() {
   return (
