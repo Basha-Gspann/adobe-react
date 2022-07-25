@@ -77,7 +77,7 @@ function Filter() {
             </div>
             <div className="filter-color aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--3">
-                <div class="color"></div>
+                <div className="color"></div>
                 </div>
 
                 <div className="aem-GridColumn aem-GridColumn--default--3">
