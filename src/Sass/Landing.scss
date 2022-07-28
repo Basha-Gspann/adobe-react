@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
 
 .landing {
-  font-size: 62.5%;
+  // font-size: 62.5%;
+  margin-top: -1rem;
 }
 
 .container {
@@ -17,7 +18,7 @@
 
 .slider {
   display: flex;
-  background-color: #00000033;
+  background-color: #E5E5E7;
 }
 
 .carousel-indicators {
@@ -27,12 +28,12 @@
 .slider h1 {
   font-family: "Source Serif Pro", serif;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 2.2rem;
   padding-right: 12rem;
 }
 
 .slider p {
-  font-size: 1.3rem;
+  font-size: .9rem;
 }
 
 .slider button {
@@ -40,7 +41,7 @@
   color: $white;
   border: none;
   padding: 0.5rem 3rem;
-  font-size: 1rem;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
@@ -55,35 +56,35 @@
 }
 
 .homecategory .cato {
-  margin-top: -7rem;
+  // margin-top: -7rem;
 }
 
 .homecategory .box1 {
   background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
   background-size: cover;
   margin: 0.4rem;
-  padding-top: 16rem;
+  padding-top: 12rem;
 }
 
 .homecategory .box2 {
   background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
   background-size: cover;
   margin: 0.4rem;
-  padding-top: 16rem;
+  padding-top: 12rem;
 }
 
 .homecategory .box3 {
   background-image: url("https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg");
   background-size: cover;
   margin: 0.4rem;
-  padding-top: 16rem;
+  padding-top: 12rem;
 }
 
 .homecategory .box4 {
   background-image: url("https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg");
   background-size: cover;
   margin: 0.4rem;
-  padding-top: 16rem;
+  padding-top: 12rem;
 }
 
 .homecategory .box-content {
@@ -95,12 +96,11 @@
 
 .homecategory h4 {
   font-family: "Source Serif Pro", serif;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
 }
 
 .homecategory p {
-  font-size: 1.3rem;
+  font-size: .9rem;
   letter-spacing: 0.3px;
 }
 
@@ -108,17 +108,21 @@
 
 .collection {
   .content {
-    padding: 8rem 4rem 8rem 8rem;
+    padding: 6rem 4rem 4rem 7rem;
 
     h1 {
       font-family: "Source Serif Pro", serif;
       font-weight: 600;
-      font-size: 3.5rem;
-      padding-right: 12rem;
+      font-size: 2.5rem;
+    }
+
+    h5{
+      font-size: 1.1rem;
+      font-weight: 600;
     }
 
     p {
-      font-size: 1.3rem;
+      font-size: .9rem;
     }
 
     button {
@@ -126,31 +130,32 @@
       color: $white;
       border: none;
       padding: 0.5rem 3rem;
-      font-size: 1rem;
+      font-size: .8rem;
       letter-spacing: 1px;
       margin-right: 1rem;
       border-radius: 0;
     }
 
     hr {
-      height: 0.8rem !important;
+      height: 0.5rem !important;
       width: 18%;
       background-color: $primarycolor;
       border: none;
-      margin-top: 6rem;
+      margin-top: 3rem;
       opacity: 3;
     }
   }
 
   img {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
 // Advanture style starts
 
 .adventure {
+  padding-bottom: 6rem;
   img {
     width: 100%;
   }
@@ -158,20 +163,21 @@
   .content {
     background-color: #1b252c;
     color: white;
-    padding: 2.7rem 8rem;
+    padding: 1rem 5rem;
     margin-top: -1rem;
-    padding-top: 8rem;
+    padding-top: 5.5rem;
 
     h1 {
       font-family: "Source Serif Pro", serif;
       font-weight: 600;
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       letter-spacing: 1px;
     }
 
     h5 {
       margin-top: 1rem;
       letter-spacing: 1px;
+      font-size: 1rem;
     }
 
     button {
@@ -179,9 +185,9 @@
       color: $white;
       border: 2px solid $white;
       padding: 0.5rem 3rem;
-      font-size: 1rem;
+      font-size: .8rem;
       letter-spacing: 1px;
-      border-radius: 0.6rem;
+      border-radius: 0.8rem;
       margin-top: 2rem;
     }
 
@@ -190,10 +196,10 @@
       width: 30%;
       background-color: #e26a2c;
       border: none;
-      margin-top: 4rem;
+      margin-top: 3rem;
       opacity: 3;
       position: relative;
-      left: -12rem;
+      left: -8rem;
     }
   }
 }

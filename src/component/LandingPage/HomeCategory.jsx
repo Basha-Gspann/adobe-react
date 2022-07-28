@@ -16,7 +16,7 @@ const HomeCategory = () => {
       <div className='cato aem-GridColumn aem-GridColumn--default--3'>
         <div className='box2'>
           <div className='box-content'>
-            <h4>Shop Women</h4>
+            <h4>Shop Men</h4>
             <p>Lorem ipsum dolor sit amet</p>
           </div>
         </div>
@@ -25,7 +25,7 @@ const HomeCategory = () => {
       <div className='cato aem-GridColumn aem-GridColumn--default--3'>
         <div className='box3'>
           <div className='box-content'>
-            <h4>Shop Women</h4>
+            <h4>Jewellery</h4>
             <p>Lorem ipsum dolor sit amet</p>
           </div>
         </div>
@@ -34,7 +34,7 @@ const HomeCategory = () => {
       <div className='cato aem-GridColumn aem-GridColumn--default--3'>
         <div className='box4'>
           <div className='box-content'>
-            <h4>Shop Women</h4>
+            <h4>Electronics</h4>
             <p>Lorem ipsum dolor sit amet</p>
           </div>
         </div>

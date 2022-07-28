@@ -15,7 +15,7 @@ const Advanture = () => {
             <h1>Conquer your next adventure</h1>
             <h5>Lorem Ipsum Dolor Tempor</h5>
             <button>SHOP DEVICES</button>
-            <FiInstagram />
+            {/* <FiInstagram /> */}
             <hr/>
         </div>
       </div>
