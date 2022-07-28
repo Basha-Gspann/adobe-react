@@ -1,6 +1,10 @@
 @import "../Sass/variables.scss";
 @import "../Sass//mixin.scss";
 
+.navdesk{
+  background-color: $primarycolor;
+  color: $white;
+}
 .navbar {
   .logo{
   position: relative;
@@ -29,9 +33,9 @@
 
   ul li {
     font-weight: 600;
-    color: $black;
+    color: $white;
     a{
-      color: $black;
+      color: $white;
     }
   }
 
@@ -41,7 +45,7 @@
 
     a {
       padding-left: 1rem;
-      color: black;
+      color: $white;
     }
     .login {
       @include nav;
@@ -77,4 +81,8 @@
   .navdesk {
         display: none;
       }
+}
+
+svg{
+color: $white;
 }
