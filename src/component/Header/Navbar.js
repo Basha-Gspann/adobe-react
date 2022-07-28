@@ -25,7 +25,7 @@ const categories = [
 const Navbar = ({ setCategory, selectedCategory, ...props }) => {
   return (
     <div className="navdesk">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <nav className="navbar navbar-expand-lg py-3">
         <div className="container">
           <div className="logo">
             <h2><a href="/"><span>V</span>ENIA</a></h2>

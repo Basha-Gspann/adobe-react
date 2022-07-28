@@ -1,13 +1,14 @@
+import React, {useState} from 'react'
 import Products from './Products';
 import Filter from './Filter';
 import Hero from './Hero';
-import Breadcrum from './Breadcrum';
+import Breadcrum from './Products/Breadcrum';
 
 
 function Home({category}) {
     return (
         <>
-        <Hero category={category}/>
+        <Hero />
         <div>
         <Breadcrum/>
         </div>
