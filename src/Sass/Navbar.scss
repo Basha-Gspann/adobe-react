@@ -4,35 +4,40 @@
 .navdesk{
   background-color: $primarycolor;
   color: $white;
+  padding-top: 0.5rem;
 }
 .navbar {
+  padding-bottom: 0 !important;
   .logo{
   position: relative;
   }
   .logo h2 {
-    font-size: 2rem;
-    font-family: "Righteous", cursive;
+    font-size: 1.6rem;
+    // font-family: "Righteous", cursive;
+    font-family: Helvetica, Arial, sans-serif;
     color: $white !important;
     text-transform: uppercase;
+    // font-weight: bold;
+    letter-spacing: 6px;
 
     a{
       color: $white;
     }
   }
-  .logo span {
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #1c87c9 50%, $white 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  // .logo span {
+  //   display: inline-block;
+  //   margin: 0;
+  //   line-height: 1em;
+  //   font-family: Helvetica, Arial, sans-serif;
+  //   font-weight: bold;
+  //   background: linear-gradient(to right, #1c87c9 50%, $white 50%);
+  //   background-clip: text;
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  // }
 
   ul li {
-    font-weight: 600;
+    font-weight: 400;
     color: $white;
     a{
       color: $white;
@@ -66,7 +71,7 @@
     }
   }
   .navbar-nav {
-    padding-left: 14rem;
+    padding-left: 7rem;
     a {
       font-size: 16px;
     }
@@ -85,4 +90,27 @@
 
 svg{
 color: $white;
+}
+
+#hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+#hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: $white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

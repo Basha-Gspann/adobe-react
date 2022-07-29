@@ -26,29 +26,31 @@
 
 .footer-copy {
   .foot-venia {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 
     .logo{
       position: relative;
     }
 
     .logo h2 {
-      font-size: 2rem;
-      font-family: "Righteous", cursive;
+      font-size: 1.5rem;
+      // font-family: "Righteous", cursive;
       color: $black !important;
-      text-transform: uppercase;
-    }
-    .logo span {
-      display: inline-block;
-      margin: 0;
-      line-height: 1em;
       font-family: Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      background: linear-gradient(to right, #1c87c9 50%, $black 50%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 6px;
     }
+    // .logo span {
+    //   display: inline-block;
+    //   margin: 0;
+    //   line-height: 1em;
+    //   font-family: Helvetica, Arial, sans-serif;
+    //   font-weight: bold;
+    //   background: linear-gradient(to right, #1c87c9 50%, $black 50%);
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    // }
 
     .terms {
       display: flex;

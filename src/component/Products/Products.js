@@ -121,7 +121,7 @@ const Products = ({ category }) => {
 
   return (
     <div className="product">
-      <div className="container">
+      <div className="">
         <div className="row"></div>
         <div className="row">{loading ? <Loading /> : <ShowProducts />}</div>
       </div>

@@ -11,6 +11,7 @@ import Signin from './component/Header/Signin';
 import Signup from "./component/Header/Signup";
 import Navmob from './component/Header/Navmob';
 import Landing from './component/LandingPage/Landing';
+import Checkout from './component/Checkout/Checkout';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -47,7 +48,8 @@ function App() {
       <Navmob countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
       <Routes>
         <Route exact path='/' element={<Home category={category} />} />
-        <Route exact path='/landing' element={<Landing />} />
+        <Route exact path='/landing-page' element={<Landing />} />
+        <Route exact path='/checkout' element={<Checkout />} />
         <Route exact path='/products' element={<Products category="" />} />
         <Route exact path='/signin' element={<Signin />} />
         <Route exact path='/signup' element={<Signup />} />

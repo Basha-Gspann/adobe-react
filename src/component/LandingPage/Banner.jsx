@@ -30,7 +30,7 @@ const Banner = () => {
         <Carousel.Item>
           <div className="slider aem-Grid aem-Grid--12">
             <div className="slide-content aem-GridColumn aem-GridColumn--default--6">
-              <h1>New Branded Collection</h1>
+              <h1>Top Offers from Top Brands</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
                 nihil magnam omnis optio, voluptatum laborum, dolorem accusamus
@@ -48,7 +48,7 @@ const Banner = () => {
         <Carousel.Item>
           <div className="slider aem-Grid aem-Grid--12">
             <div className="slide-content aem-GridColumn aem-GridColumn--default--6">
-              <h1>New Arrivels Collection</h1>
+              <h1>Top Rated Signature Collection</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
                 nihil magnam omnis optio, voluptatum laborum, dolorem accusamus
