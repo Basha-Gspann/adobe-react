@@ -2,16 +2,16 @@ import React from "react";
 import "../../Sass/Hero.scss";
 import hero from "../../Images/hero.jpg";
 
-const getCategoryName = (cat) => {
-  if (cat == "women's clothing") return "Women's clothing";
+const getCategoryName = (section) => {
+  if (section == "women's clothing") return "Women's clothing";
 
-  if (cat == "men's clothing") return "Men's clothing";
+  if (section == "men's clothing") return "Men's clothing";
 
-  if (cat == "jewelery") return "Smart Gear";
+  if (section == "jewelery") return "Smart Gear";
 
-  if (cat == "electronics") return "Accessories";
+  if (section == "electronics") return "Accessories";
 
-  return cat;
+  return section;
 };
 
 function Hero({category}) {

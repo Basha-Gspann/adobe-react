@@ -15,9 +15,11 @@ const Collection = () => {
               magna.
             </p>
             <div class="btn-group">
+              <div className='collect'>
               <button type="button" class="btn btn-default">
               SHOP COLLECTION
               </button>
+              </div>
               <button type="button" class="btn btn-default">
               SHOP NOW
               </button>

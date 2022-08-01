@@ -4,6 +4,7 @@ import { BiPencil,BiTrash,BiHeart,BiLockAlt } from 'react-icons/bi';
 import { FiLock } from 'react-icons/fi';
 import Pay from '../../Images/pay1.png'
 import Accordian from "../Products/Accordian";
+import { NavLink } from "react-router-dom";
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -97,10 +98,9 @@ export default function Basket(props) {
               <div className="buttons">
               <div>
                 <button
-                  onClick={() => alert("Implement Checkout!")}
                   className="check"
                 >
-                  <FiLock size={18}/>&nbsp;&nbsp;CHECKOUT
+                  <NavLink to='/checkout'><FiLock size={18}/>&nbsp;&nbsp;CHECKOUT</NavLink>
                 </button>
                 </div>
                 <div>

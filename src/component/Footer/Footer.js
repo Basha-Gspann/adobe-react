@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Sass/Footer.scss";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -47,10 +48,10 @@ const Footer = () => {
                     <a href="">Contact Us</a>
                   </li>
                   <li>
-                    <a href="">Order Status</a>{" "}
+                    <a href="">Order Status</a>
                   </li>
                   <li>
-                    <a href="">Returns</a>{" "}
+                    <a href="">Returns</a>
                   </li>
                 </ul>
               </div>
@@ -76,9 +77,11 @@ const Footer = () => {
           <div className="aem-Grid aem-Grid--12 foot-venia">
             <div className="aem-GridColumn aem-GridColumn--default--4">
               <div className="logo">
+                <NavLink to='/'>
                 <h2>
                   <span>V</span>ENIA
                 </h2>
+                </NavLink>
               </div>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">

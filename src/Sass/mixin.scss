@@ -1,18 +1,35 @@
-@mixin filter-color ($color) {
-    background-color: $color;
-    border-radius: .7rem;
-    height: 28px;
-    width: 37px;
+@mixin filter-color($color) {
+  background-color: $color;
+  border-radius: 0.7rem;
+  height: 28px;
+  width: 37px;
 }
 
 @mixin nav {
-    text-decoration: none;
-      color: $white;
-      font-size: 16px;
+  text-decoration: none;
+  color: $white;
+  font-size: 16px;
 }
 
 @mixin product-color($color) {
-    background: $color;
-    margin-right: 10px;
-    border-radius: 0.6rem;
+  background: $color;
+  margin-right: 10px;
+  border-radius: 0.6rem;
+}
+
+@mixin landing-button {
+  padding: 0.5rem 3rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+@mixin checkout-button {
+  background-color: white;
+  color: $primarycolor;
+  border: 2px solid $primarycolor;
+  padding: 0.5rem 3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }

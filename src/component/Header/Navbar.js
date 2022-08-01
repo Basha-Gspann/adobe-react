@@ -6,23 +6,23 @@ import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 
 const categories = [
   {
-    displayName: <a href="/landing-page">Home</a>,
+    displayName: <NavLink to="/">Home</NavLink>,
   },
   {
     filter: "women's clothing",
-    displayName: <a href="/#">Women</a>,
+    displayName: <NavLink to="/home">Women</NavLink>,
   },
   {
     filter: "men's clothing",
-    displayName: <a href="/#">Men</a>,
+    displayName: <NavLink to="/home">Men</NavLink>,
   },
   {
     filter: "jewelery",
-    displayName: <a href="/#">Smart Gear</a>,
+    displayName: <NavLink to="/home">Smart Gear</NavLink>,
   },
   {
     filter: "electronics",
-    displayName: <a href="/#">Accessories</a>,
+    displayName: <NavLink to="/home">Accessories</NavLink>,
   },
 ];
 const Navbar = ({ setCategory, selectedCategory, ...props }) => {
@@ -31,7 +31,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <div className="logo">
-            <h2><a href="/landing-page"><span>V</span>ENIA</a></h2>
+            <h2><a href="/"><span>V</span>ENIA</a></h2>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">

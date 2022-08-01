@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "../../Images/adventure.png";
-import { FiInstagram } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
 
 const Advanture = () => {
   return (
@@ -15,7 +15,7 @@ const Advanture = () => {
             <h1>Conquer your next adventure</h1>
             <h5>Lorem Ipsum Dolor Tempor</h5>
             <button>SHOP DEVICES</button>
-            {/* <FiInstagram /> */}
+            <FiMapPin size={40} />
             <hr/>
         </div>
       </div>

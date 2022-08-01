@@ -11,7 +11,7 @@ const Banner = () => {
      <Carousel fade={true} pause={false}>
         <Carousel.Item>
           <div className="slider aem-Grid aem-Grid--12">
-            <div className="slide-content aem-GridColumn aem-GridColumn--default--6">
+            <div className="slide-content aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <h1>Shop the new Signature Collection</h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
@@ -22,7 +22,7 @@ const Banner = () => {
               <button>SHOP NOW</button>
             </div>
 
-            <div className="slider-img aem-GridColumn aem-GridColumn--default--6">
+            <div className="slider-img aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
               <img className="d-block w-100" src={Slide1} alt="First slide" />
             </div>
           </div>

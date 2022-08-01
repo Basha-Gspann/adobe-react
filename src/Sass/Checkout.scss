@@ -6,17 +6,174 @@
 .info {
   h1 {
     text-align: center;
-    font-weight: 600;
-    padding-top: 2rem;
+    font-weight: 600 !important;
+    padding-top: 1rem;
     font-family: Source Serif Pro, Semibold;
   }
 
-  hr {
+  .hr {
     height: 0.4rem !important;
     width: 7%;
     background-color: #e26a2c !important;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     margin-left: 33rem !important;
-    opacity: 3;
+    opacity: 3 !important;
   }
+
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.6rem;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"] {
+    width: 90%;
+    padding: 3px 4px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid #b5b7bc;
+    border-radius: 6px;
+  }
+
+  .price {
+    border: 1px #d1d3d6 solid;
+    padding: 0rem 2rem 1rem 2rem;
+    margin-right: 1rem;
+    // box-shadow: 5px 10px 8px 10px #0000000d;
+    // border-radius: 0.3rem;
+  }
+  h2 {
+    font-family: Source Serif Pro, Semibold;
+    font-weight: 600;
+  }
+  h6 {
+    padding-top: 1rem;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    button {
+      @include checkout-button;
+    }
+  }
+  .multi {
+    color: #72777f;
+  }
+  .price {
+    button {
+      @include checkout-button;
+    }
+  }
+  p {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    margin: 0;
+    letter-spacing: 0.4px;
+  }
+}
+
+.shipping label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+.details {
+  padding-right: 5rem;
+  color: #535965;
+}
+
+.edit,
+.info svg {
+  color: $primarycolor;
+}
+
+input[type="radio"] {
+  accent-color: $primarycolor;
+}
+
+.items {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.items img {
+  width: 100px;
+  height: 100px;
+}
+
+.items p {
+  padding-top: 0.4rem;
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+}
+
+.success {
+  padding-right: 15.5rem;
+  color: #535965;
+}
+
+.sucess-icon {
+  background-color: $primarycolor;
+  color: $white;
+  padding: 3rem 4rem;
+
+  h2 {
+    font-family: Source Serif Pro, Semibold;
+    font-weight: 100;
+  }
+  .social {
+    padding: 0rem 2rem;
+    svg {
+      color: $white;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.info a,
+.info a:hover {
+  color: $primarycolor;
+}
+
+// Responsive
+
+@media only screen and (max-width: 768px) {
+  .info .hr {
+    width: 15%;
+    margin-left: 17rem !important;
+  }
+  .info p {
+    padding-bottom: 1rem;
+  }
+  .info input[type="text"],
+  .info input[type="tel"],
+  .info input[type="email"],
+  .info input[type="password"] {
+    width: 100%;
+  }
+  .price-mob {
+    display: none;
+  }
+  .sucess-icon{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .info .hr {
+    width: 30%;
+    margin-left: 5rem !important;
+  }
+
+  .info .button button {
+    padding: 0.5rem 1rem;
+}
 }
