@@ -1,7 +1,7 @@
 import React from "react";
 import "../../Sass/Navbar.scss";
 import { NavLink } from "react-router-dom";
-
+import Logo from '../../Images/logo.png'
 import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 
 const categories = [
@@ -31,6 +31,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <div className="logo">
+            {/* <img src={Logo} alt="" /> */}
             <h2><a href="/"><span>V</span>ENIA</a></h2>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

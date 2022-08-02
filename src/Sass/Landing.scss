@@ -210,6 +210,10 @@
   }
 }
 
+.slider-tablet {
+  display: none;
+}
+
 .slider-mobile {
   display: none;
 }
@@ -234,7 +238,7 @@
     display: none;
   }
 
-  .slider-mobile {
+  .slider-tablet {
     display: block;
   }
 
@@ -339,8 +343,85 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+
+  .slider-tablet{
+    display: none;
+  }
+  .slider-mobile {
+    display: block;
+  }
+
+  .carousel-control-prev-icon ,.carousel-control-next{
+    display: none !important;
+  }
+
+  .carousel-caption{
+    left: 2% !important;
+    right: 2% !important;
+    top: 13rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.6rem;
+    padding: 0rem;
+}
+
+.carousel-indicators {
+  display: block !important;
+  margin-right: 40% !important;
+  margin-left: 40% !important;
+  top: 26rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 4rem !important;
+  background-color: $black !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
+
+}
+
 
 @media only screen and (max-width: 320px){
+
+  .carousel-control-prev-icon ,.carousel-control-next{
+    display: none !important;
+  }
+
+  .carousel-caption{
+    left: 2% !important;
+    right: 2% !important;
+    top: 13rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.6rem;
+    padding: 0rem;
+}
+
+.carousel-indicators {
+  display: block !important;
+  margin-right: 40% !important;
+  margin-left: 40% !important;
+  top: 26rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 4rem !important;
+  background-color: $black !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
 
   .homecategory{
     display: none;
@@ -357,8 +438,17 @@
 }
 
 .adventure .content {
-  margin: -2rem 1rem 2rem 1rem !important;
-  padding-top: 6px;
+  margin: -2rem 1rem 2rem 1.3rem !important;
+  padding: 0 1rem 2rem 1rem;
+}
+
+.adventure .content svg {
+  position: relative;
+  right: 7rem;
+}
+
+.adventure .content hr {
+  margin-bottom: 2rem;
 }
   
 }

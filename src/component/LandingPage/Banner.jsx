@@ -5,6 +5,8 @@ import Slide1 from "../../Images/slide1.jpg";
 import Slide2 from "../../Images/slide2.jpg";
 import Slide3 from "../../Images/slide3.jpg";
 
+import Slide from "../../Images/slider.png";
+
 const Banner = () => {
   return (
     <>
@@ -67,7 +69,7 @@ const Banner = () => {
         </Carousel>
       </div>
 
-      <div className="slider-mobile">
+      <div className="slider-tablet">
         <Carousel fade={true} pause={false}>
           <Carousel.Item interval={2000}>
             <img className="d-block w-100" src={Slide1} alt="First slide" />
@@ -91,6 +93,41 @@ const Banner = () => {
           </Carousel.Item>
           <Carousel.Item interval={2000}>
             <img className="d-block w-100" src={Slide3} alt="Third slide" />
+            <Carousel.Caption>
+              <h1>Top Rated Signature Collection</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+              <button>SHOP NOW</button>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+
+      <div className="slider-mobile">
+        <Carousel fade={true} pause={false}>
+          <Carousel.Item interval={2000}>
+            <img className="d-block w-100" src={Slide} alt="First slide" />
+            <Carousel.Caption>
+              <h1>Shop the new Signature Collection</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+              <button>SHOP NOW</button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={2000}>
+            <img className="d-block w-100" src={Slide} alt="Third slide" />
+            <Carousel.Caption>
+              <h1>Top Offers from Top Brands</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+              <button>SHOP NOW</button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={2000}>
+            <img className="d-block w-100" src={Slide} alt="Third slide" />
             <Carousel.Caption>
               <h1>Top Rated Signature Collection</h1>
               <p>
