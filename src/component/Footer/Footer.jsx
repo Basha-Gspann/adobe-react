@@ -126,9 +126,11 @@ const Footer = () => {
             </div>
 
             <div className="logo">
-              <h2>
-                <span>V</span>ENIA
-              </h2>
+            <NavLink to='/'>
+                <h2>
+                  <span>V</span>ENIA
+                </h2>
+                </NavLink>
             </div>
           </div>
         </div>

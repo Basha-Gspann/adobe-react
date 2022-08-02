@@ -36,18 +36,20 @@ const Shipping = () => {
             <h6>2. Shipping Method</h6>
             <form>
               <div className="shipping">
-              <input type="radio" id="" name="" value="" />
               <label for="">
+              <input type="radio" id="" name="" value="" />&nbsp;
                 Standard Shipping (4-8 business days via USPS) FREE
               </label>
               <br />
-              <input type="radio" id="" name="" value="" />
+              
               <label for="">
+              <input type="radio" id="" name="" value="" />&nbsp;
                 Express Delivery (2-5 business days via USPS) $17.95
               </label>
               <br />
-              <input type="radio" id="" name="" value="" />
+              
               <label for="">
+              <input type="radio" id="" name="" value="" />&nbsp;
                 Next Day Delivery (Next business days via FedEx) $53.61
               </label>
               </div>
@@ -72,7 +74,7 @@ const Shipping = () => {
                 <p>Coupon</p>
                 <p>Gift Card</p>
                 <p>Estimated tax</p>
-                <p>Estimated shipping</p>
+                <p>Est. shipping</p>
                 <p>
                   <strong>Estimated Total</strong>
                 </p>

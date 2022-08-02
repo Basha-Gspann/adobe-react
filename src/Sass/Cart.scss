@@ -101,11 +101,15 @@
     }
     .check {
       border: none;
-      background-color: #1f39ff;
+      background-color: $primarycolor;
       color: white;
       padding: 8px 70px;
       border-radius: 2rem;
       margin-top: 1rem;
+
+      a{
+        color: $white;
+      }
     }
     .pay {
       background-color: transparent;
@@ -122,12 +126,13 @@
 
 .accordian {
   padding: 2rem 0;
+  margin-right: 2rem;
 }
 
 // Result start
 
 .acco-right {
-  padding-left: 19rem;
+  padding-left: 17rem;
 }
 
 // Recently Viewed

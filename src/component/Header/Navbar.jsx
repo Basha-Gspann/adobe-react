@@ -60,7 +60,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
               <NavLink to="/cart" className="cart">
                 <FiShoppingBag size={25}/>{" "}
                 {props.countCartItems ? (
-                  <button className="btn btn-success">
+                  <button className="btn">
                     {props.countCartItems}
                   </button>
                 ) : (

@@ -134,7 +134,7 @@ const Info = () => {
                 {/* <h6>
                   <strong>$ 233.68</strong>
                 </h6> */}
-                <button>SIGN IN</button>
+                <button><NavLink to="/signin">SIGN IN</NavLink></button>
               </div>
             </div>
             <br/>
@@ -146,7 +146,7 @@ const Info = () => {
                 <p>Coupon</p>
                 <p>Gift Card</p>
                 <p>Estimated tax</p>
-                <p>Estimated shipping</p>
+                <p>Est. shipping</p>
                 <p>
                   <strong>Estimated Total</strong>
                 </p>

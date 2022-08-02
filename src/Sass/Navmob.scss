@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +30,7 @@ body {
 
 .navbar .menu-items {
   display: flex;
-  background-color: whitesmoke;
+  background-color: $primarycolor;
 }
 
 .navbar .nav-container li {
@@ -243,7 +245,11 @@ body {
     left: 85px;
   }
   .navbar .menu-items {
-    margin-right: -11px;
+    margin: -1rem -1rem 0 -2rem;
     padding-left: 0px;
+  }
+
+  .navbar .menu-items ul{
+    padding-left: 0;
   }
 }

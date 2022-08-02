@@ -121,7 +121,7 @@ input[type="radio"] {
 }
 
 .sucess-icon {
-  background-color: $primarycolor;
+  background-color: #FF8243;
   color: $white;
   padding: 3rem 4rem;
 
@@ -169,11 +169,19 @@ input[type="radio"] {
 
 @media only screen and (max-width: 320px) {
   .info .hr {
-    width: 30%;
-    margin-left: 5rem !important;
+    width: 27%;
+    margin-left: 7rem !important;
   }
 
   .info .button button {
     padding: 0.5rem 1rem;
+}
+
+.info p {
+  padding-bottom: 0rem;
+}
+
+.success{
+  padding-right: 124px;
 }
 }

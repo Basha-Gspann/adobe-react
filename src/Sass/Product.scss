@@ -1,6 +1,12 @@
 @import "../Sass/variables.scss";
 @import "../Sass/mixin.scss";
 
+
+
+.container{
+  max-width: 85%;
+  margin: 0 auto;
+}
 .product-details {
   p:first-child {
     font-size: 1rem;
@@ -84,7 +90,7 @@
 .Producttitle hr {
   height: 0.6rem !important;
   width: 11%;
-  background-color: #001eff;
+  background-color: $primarycolor;
   margin-top: 2rem;
   opacity: 3;
 }
@@ -95,6 +101,10 @@
 
 .small img {
   padding-bottom: 1rem;
+}
+
+.big img{
+  width: 145%;
 }
 
 @media only screen and (max-width: 768px) {

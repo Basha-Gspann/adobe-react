@@ -80,7 +80,7 @@ const Product = (props) => {
                     width="120px"
                   />
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 big">
                   <img
                     className="pro-img"
                     src={product.image}
@@ -139,7 +139,7 @@ const Product = (props) => {
             </div>
           </div>
         </div>
-        <div className="Producttitle">
+        <div className="Producttitle container">
           <div className="aem-Grid aem-Grid--12">
             <h1>{product.title}</h1>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
@@ -189,7 +189,7 @@ const Product = (props) => {
   };
   return (
     <div>
-      <div className="container">
+      <div className="">
         <div className="row py-4">
           {loading ? <Loading /> : <ShowProduct onAdd={onAdd} />}
         </div>

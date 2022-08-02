@@ -2,7 +2,7 @@ import React from "react";
 import { FiEdit2 } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
-const FinalCeck = () => {
+const Payment = () => {
   return (
     <>
       <div className="info container">
@@ -63,81 +63,51 @@ const FinalCeck = () => {
                 </div>
               </div>
             </div>
-            <br />
-
-            <div className="price">
-              <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--6">
-                  <p>
-                    <strong>Payment Information</strong>
-                  </p>
-                </div>
-                <div className="aem-GridColumn aem-GridColumn--default--6 text-right">
-                  <p className="edit">
-                    <FiEdit2 /> Edit
-                  </p>
-                </div>
+            <h6>3. Payment Information</h6>
+            <form>
+              <div className="shipping">
+                <input type="radio" id="" name="" value="" />
+                <label for="">&nbsp;&nbsp;Credit Card</label>
               </div>
-
-              <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className="details">Credit Card Visa ending in 4567</p>
-                </div>
-              </div>
-            </div>
-            <br />
-
-            <div className="price">
-              <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--6">
-                  <p>
-                    <strong>3 items in your order</strong>
-                  </p>
-                </div>
-              </div>
-
               <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                  <div className="items">
-                  <div>
-                    <img
-                      src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p>Electric Leggings</p>
-                    <p>Size: Medium</p>
-                    <p>Color: Storm</p>
-                    <p>Quantity: 2</p>
-                  </div>
-                  </div>
-                </div>
-                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                  <div className="items">
-                  <div>
-                    <img
-                      src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p>Signature Sports Bra</p>
-                    <p>Size: Medium</p>
-                    <p>Color: Storm</p>
-                    <p>Quantity: 2</p>
-                  </div>
-                  </div>
+                  <label className="">Name on Card</label>
+                  <input
+                    type="email"
+                    className=""
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+
+                  <label className="">Credit Card Number</label>
+                  <input
+                    type="text"
+                    className=""
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+
+                  <label className="">Expiration Date</label>
+                  <input
+                    type="text"
+                    className=""
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
                 </div>
               </div>
-            </div>
+              <div className="shipping">
+              <hr />
+                <input type="radio" id="" name="" value="" />
+                <label for="">&nbsp;&nbsp;PayPal</label>
+                <hr />
+              </div>
+            </form>
 
             <div className="button">
-              <button><NavLink to='/successful'>PLACE ORDER</NavLink></button>
+              <button><NavLink to='/finalCeck'>CONTINUE TO REVIEW ORDER</NavLink></button>
             </div>
-            <p className="text-center">By clicking confirm order you agree to our <a href="">Terms and Conditions</a></p>
           </div>
-          
 
           <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
             <div className="aem-Grid aem-Grid--12 price">
@@ -147,7 +117,7 @@ const FinalCeck = () => {
                 <p>Coupon</p>
                 <p>Gift Card</p>
                 <p>Estimated tax</p>
-                <p>Estimated shipping</p>
+                <p>Est. shipping</p>
                 <p>
                   <strong>Estimated Total</strong>
                 </p>
@@ -170,4 +140,4 @@ const FinalCeck = () => {
   );
 };
 
-export default FinalCeck;
+export default Payment;

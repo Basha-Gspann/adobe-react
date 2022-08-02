@@ -62,11 +62,13 @@
     .cart {
       @include nav;
 
-      .btn-success {
-        color: white;
-        border: 2px solid;
+      button {
+        color: $white;
+        background-color: #FF8243;
+        // border: 2px solid;
         padding: 0px 6px;
         border-radius: 12px;
+        margin: -23px 0px 0px -16px;
       }
     }
   }
