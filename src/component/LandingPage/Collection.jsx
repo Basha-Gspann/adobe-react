@@ -14,13 +14,13 @@ const Collection = () => {
               eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore
               magna.
             </p>
-            <div class="btn-group">
+            <div className="btn-group">
               <div className='collect'>
-              <button type="button" class="btn btn-default">
+              <button type="button" className="btn btn-default">
               SHOP COLLECTION
               </button>
               </div>
-              <button type="button" class="btn btn-default">
+              <button type="button" className="btn btn-default">
               SHOP NOW
               </button>
             </div>
@@ -47,14 +47,14 @@ const Collection = () => {
               eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore
               magna.
             </p>
-            <div class="">
-            <button type="button" class="btn btn-default">
+            <div className="">
+            <button type="button" className="btn btn-default">
               SHOP NOW
               </button>
               <br />
               <br />
               <div className='collect'>
-              <button type="button" class="btn btn-default">
+              <button type="button" className="btn btn-default">
               SHOP COLLECTION
               </button>
               </div>
