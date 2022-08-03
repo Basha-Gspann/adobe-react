@@ -27,6 +27,46 @@
     justify-content: center;
 }
 
+
+
+@media only screen and (min-width: 1024px) and  (max-width: 1200px){
+
+    .card {
+        padding: 0rem;
+    }
+
+    .Producttitle h1 {
+        padding-right: 22rem;
+    }
+
+    .cart .group {
+        padding-left: 0rem;
+        padding-top: 10rem;
+    }
+
+    .acco-right {
+        padding-left: 10rem;
+    }
+
+    .cart .checkout .check {
+        padding: 8px 46px;
+    }
+
+    .cart .pay img{
+        width: 100%;
+    }
+
+    .cart hr {
+        margin-left: 22rem!important;
+        width: 17%;
+    }
+
+    .info .hr {
+        margin-left: 25rem!important;
+    }
+}
+
+
 @media only screen and (max-width: 768px){
     .small{
         display: none;
