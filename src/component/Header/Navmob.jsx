@@ -5,20 +5,23 @@ import { NavLink } from "react-router-dom";
 
 const categories = [
   {
+    displayName: <NavLink to="/">Home</NavLink>,
+  },
+  {
     filter: "women's clothing",
-    displayName: "Women",
+    displayName: <NavLink to="/home">Women</NavLink>,
   },
   {
     filter: "men's clothing",
-    displayName: "Men",
+    displayName: <NavLink to="/home">Men</NavLink>,
   },
   {
     filter: "jewelery",
-    displayName: "Smart Gear",
+    displayName: <NavLink to="/home">Smart Gear</NavLink>,
   },
   {
     filter: "electronics",
-    displayName: "Accessories",
+    displayName: <NavLink to="/home">Accessories</NavLink>,
   },
 ];
 const Navmob = ({ setCategory, selectedCategory, ...props }) => {
