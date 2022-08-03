@@ -199,6 +199,10 @@ input[type="radio"] {
   .info input[type="password"] {
     width: 100%;
   }
+
+  .info .price button {
+    padding: 0.5rem 1.5rem;
+}
   .price-mob {
     display: none;
   }
