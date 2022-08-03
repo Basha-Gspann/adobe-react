@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Sass/Hero.scss";
-import hero from "../../Images/hero.jpg";
+import hero from "../../Images/hero1.jpg";
 
 const getCategoryName = (section) => {
   if (section == "women's clothing") return "Women's clothing";

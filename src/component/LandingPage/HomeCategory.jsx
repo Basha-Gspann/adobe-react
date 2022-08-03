@@ -3,8 +3,8 @@ import React from "react";
 const HomeCategory = () => {
   return (
     <>
-      <div className="homecategory">
-        <div className="container aem-Grid aem-Grid--12 desktop">
+      <div className="homecategory container">
+        <div className="aem-Grid aem-Grid--12 desktop">
           <div className="cato aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
             <div className="box box1">
               <div className="box-content">

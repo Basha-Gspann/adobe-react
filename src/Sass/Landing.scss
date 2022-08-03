@@ -233,6 +233,77 @@
 
 // Responsive
 
+
+@media only screen and (min-width: 1024px) and  (max-width: 1200px) {
+
+  .slider .slide-content h1 {
+    padding-right: 0rem;
+}
+
+.slider .slide-content {
+  padding: 5rem;
+}
+
+.homecategory {
+  top: 28rem;
+  left: 0rem;
+  right: 0rem;
+}
+
+.homecategory .box {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.homecategory .box-content h4 {
+  font-size: 1.3rem;
+}
+
+.homecategory .box-content {
+  background-color: #1b252cd9;
+  color: white;
+  padding: 1.4rem 0 0.4rem 0.4rem;
+}
+
+.collection .content {
+  padding: 4rem;
+}
+
+.collection .content .collect button {
+  padding: 0.5rem 1rem;
+}
+
+.collection .content hr {
+  width: 30%;
+}
+
+.adventure {
+  padding-top: 0rem;
+}
+
+.adventure img {
+  height: 19.6rem;
+}
+
+.adventure .content {
+  padding: 1rem 2rem;
+  padding-top: 2.5rem;
+}
+
+.adventure .content hr {
+  left: -4.8rem;
+}
+
+.adventure .content svg {
+  right: 11.8rem;
+}
+
+.collection {
+  margin-top: 18rem !important;
+}
+}
+
+
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 90% !important;
@@ -410,8 +481,8 @@ padding: 1.4rem 0 0.4rem 0rem;
 
 .homecategory {
   top: 36rem; 
-  left: 6rem; 
-  right: 6rem;
+  left: 0rem; 
+  right: 0rem;
 }
 
 .homecategory .box1 , .homecategory .box2, .homecategory .box3 , .homecategory .box4 {
@@ -436,12 +507,6 @@ padding: 1.4rem 0 0.4rem 0rem;
   padding-top: 14rem;
 }
 
-.homecategory {
-  top: 36rem;
-  left: 4rem;
-  right: 4rem;
-}
-
 .collection {
   margin-top: 79rem !important;
 }
@@ -451,11 +516,11 @@ padding: 1.4rem 0 0.4rem 0rem;
 }
 
 .adventure .content {
-  margin: -2rem 2.7rem 2rem 1.7rem !important;
+  margin: -2rem 1.7rem 2rem 1.4rem !important;
 }
 
 .adventure .content svg {
-  right: 6.6rem;
+  right: 7.6rem;
 }
 
 .adventure .content {
@@ -480,6 +545,7 @@ padding: 1.4rem 0 0.4rem 0rem;
 
 .adventure .content svg {
   top: -3.5rem;
+  right: 6.6rem;
 }
 
 .adventure .content {
@@ -544,8 +610,8 @@ padding: 1.4rem 0 0.4rem 0rem;
 }
 
 .homecategory {
-  left: 2rem;
-  right: 2rem;
+  left: 1rem;
+  right: 1rem;
 }
 
 .collection {

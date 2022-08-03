@@ -78,15 +78,15 @@ export default function Basket(props) {
             <>
             <h5>Pricing Summary</h5>
             <div className="aem-Grid aem-Grid--12">
-              <div className="aem-GridColumn aem-GridColumn--default--6">
+              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6">
                 <h6>Subtotal</h6>
                 <h6>Coupon</h6>
                 <h6>Gift Card</h6>
                 <h6>Estimated tax</h6>
-                <h6>Estimated shipping</h6>
-                <h6><strong>Estimated Total</strong></h6>
+                <h6>Est. shipping</h6>
+                <h6><strong>Est. Total</strong></h6>
               </div>
-              <div className="aem-GridColumn aem-GridColumn--default--6 text-right">
+              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 text-right">
                 <h6>${itemsPrice.toFixed(2)}</h6>
                 <h6>${taxPrice.toFixed(2)}</h6>
                 <h6>${shippingPrice.toFixed(2)}</h6>

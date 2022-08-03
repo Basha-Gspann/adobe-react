@@ -135,7 +135,7 @@ const FinalCeck = () => {
             <div className="button">
               <button><NavLink to='/successful'>PLACE ORDER</NavLink></button>
             </div>
-            <p className="text-center">By clicking confirm order you agree to our <a href="">Terms and Conditions</a></p>
+            <p className="text-center terms">By clicking confirm order you agree to our <a href="">Terms and Conditions</a></p>
           </div>
           
 
@@ -149,7 +149,7 @@ const FinalCeck = () => {
                 <p>Estimated tax</p>
                 <p>Est. shipping</p>
                 <p>
-                  <strong>Estimated Total</strong>
+                  <strong>Est. Total</strong>
                 </p>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--6 text-right">

@@ -76,7 +76,7 @@ const Shipping = () => {
                 <p>Estimated tax</p>
                 <p>Est. shipping</p>
                 <p>
-                  <strong>Estimated Total</strong>
+                  <strong>Est. Total</strong>
                 </p>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--6 text-right">

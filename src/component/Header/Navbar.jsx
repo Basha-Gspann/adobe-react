@@ -31,8 +31,8 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <div className="logo">
-            {/* <img src={Logo} alt="" /> */}
-            <h2><a href="/"><span>V</span>ENIA</a></h2>
+            <NavLink to='/'><img src={Logo} alt="" /></NavLink>
+            {/* <h2><a href="/"><span>V</span>ENIA</a></h2> */}
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">

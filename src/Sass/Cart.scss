@@ -195,7 +195,7 @@
     margin-left: 8rem !important;
   }
   .cart .group {
-    padding-top: 9.5rem;
+    padding-top: 10rem;
     padding-left: 0rem;
   }
   .cart .group .border {
@@ -205,4 +205,12 @@
     border: 2px #6c757d solid !important;
     color: black;
   }
+
+  .cart .checkout .check {
+    padding: 8px 54px;
+}
+
+.cart .checkout .pay img{
+  width: 100%;
+}
 }

@@ -138,12 +138,52 @@ input[type="radio"] {
   }
 }
 
+.terms{
+  padding-top: 0 !important;
+  padding-bottom: 1rem;
+
+  a{
+    text-decoration: underline !important;
+  }
+}
+
 .info a,
 .info a:hover {
   color: $primarycolor;
 }
 
 // Responsive
+
+
+@media only screen and (min-width: 1440px) and  (max-width: 1500px) {
+
+  .adventure .content {
+    padding: 3.5rem 5rem;
+}
+}
+
+@media only screen and (min-width: 1024px) and  (max-width: 1200px) {
+
+  .details {
+    padding-right: 0rem;
+}
+
+.success {
+  padding-right: 8rem;
+}
+
+.sucess-icon .social {
+  padding: 0rem 0rem;
+}
+
+.sucess-icon .social svg {
+  margin-top: 1rem;
+}
+
+.sucess-icon {
+  padding: 2rem 1.5rem;
+}
+}
 
 @media only screen and (max-width: 768px) {
   .info .hr {
@@ -179,6 +219,10 @@ input[type="radio"] {
 
 .info p {
   padding-bottom: 0rem;
+}
+
+.terms{
+  padding-bottom: 1rem !important;
 }
 
 .success{
