@@ -72,7 +72,7 @@ function Filter() {
           </div>
 
           <>
-            <div>
+            {/* <div>
               <h6>Color</h6>
             </div>
             <div className="filter-color aem-Grid aem-Grid--12">
@@ -119,10 +119,10 @@ function Filter() {
                 <div className="aem-GridColumn aem-GridColumn--default--3">
                 <div className="color9"></div>
                 </div>
-            </div>
+            </div> */}
           </>
 
-          <hr />
+          {/* <hr /> */}
           <div>
             <h6>Brand</h6>
             <ul>
@@ -133,7 +133,7 @@ function Filter() {
 
                 <li>
                 <input type="checkbox" id="option" name="option" value="option" />
-            <label>Dolce & Gabbana</label>
+            <label>Gabbana</label>
                 </li>
 
                 <li>
