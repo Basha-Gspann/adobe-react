@@ -152,14 +152,39 @@ input[type="radio"] {
   color: $primarycolor;
 }
 
+input[type="checkbox"]:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f096";
+  opacity: 1 !important;
+  margin-top: -25px;
+  appearance: none;
+  background: #fff;
+  color: #1F39FA;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\f046";
+  color: #E26A2C;
+}
+
+input[type="checkbox"] {
+  vertical-align:middle;
+  font-size: 28px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 // Responsive
 
 
 @media only screen and (min-width: 1440px) and  (max-width: 1500px) {
 
-  .adventure .content {
-    padding: 3.5rem 5rem;
-}
+ 
 }
 
 @media only screen and (min-width: 1024px) and  (max-width: 1200px) {

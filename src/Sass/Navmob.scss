@@ -197,6 +197,17 @@ body {
   .loginmob {
     left: 19rem;
   }
+
+  .navbar .menu-items {
+    height: 100vh;
+    margin-left: -49px;
+    margin-right: -49px;
+    margin-top: -7px;
+}
+
+.navbar ul{
+  padding-left: 0rem !important;
+}
 }
 
 @media only screen and (max-width: 426px) {
@@ -212,6 +223,11 @@ body {
   .loginmob {
     left: 8rem;
   }
+
+  .navbar .menu-items {
+    margin-left: -30px;
+    margin-right: -30px;
+}
 }
 
 @media only screen and (max-width: 376px) {
@@ -227,6 +243,11 @@ body {
   .loginmob {
     left: 9rem;
   }
+
+  .navbar .menu-items {
+    margin-left: -27px;
+    margin-right: -27px;
+}
 }
 
 @media only screen and (max-width: 320px) {
@@ -253,4 +274,9 @@ body {
   .navbar .menu-items ul{
     padding-left: 0;
   }
+
+  .navbar .menu-items {
+    margin-left: -23px;
+    margin-right: -23px;
+}
 }

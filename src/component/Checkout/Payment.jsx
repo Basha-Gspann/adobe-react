@@ -6,7 +6,7 @@ const Payment = () => {
   return (
     <>
       <div className="info container">
-      <h1>Checkout</h1>
+        <h1>Checkout</h1>
         <hr className="hr" />
         <h2>Guest Checkout</h2>
         <div className="aem-Grid aem-Grid--12">
@@ -93,11 +93,21 @@ const Payment = () => {
                     className=""
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                  />
+                  /><br/>
+
+                  <label for="vehicle1">
+                    <input
+                      type="checkbox"
+                      id="vehicle1"
+                      name="vehicle1"
+                      value="Bike"
+                    />&nbsp;&nbsp; 
+                    Billing address same as shipping address
+                  </label>
                 </div>
               </div>
               <div className="shipping">
-              <hr />
+                <hr />
                 <input type="radio" id="" name="" value="" />
                 <label for="">&nbsp;&nbsp;PayPal</label>
                 <hr />
@@ -105,7 +115,9 @@ const Payment = () => {
             </form>
 
             <div className="button">
-              <button><NavLink to='/finalCeck'>CONTINUE TO REVIEW ORDER</NavLink></button>
+              <button>
+                <NavLink to="/finalCeck">CONTINUE TO REVIEW ORDER</NavLink>
+              </button>
             </div>
           </div>
 
