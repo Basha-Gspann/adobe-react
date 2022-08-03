@@ -3,13 +3,13 @@ import "../../Sass/Hero.scss";
 import hero from "../../Images/hero1.jpg";
 
 const getCategoryName = (section) => {
-  if (section == "women's clothing") return "Women's";
+  if (section === "women's clothing") return "Women's";
 
-  if (section == "men's clothing") return "Men's";
+  if (section === "men's clothing") return "Men's";
 
-  if (section == "jewelery") return "Smart Gear";
+  if (section === "jewelery") return "Smart Gear";
 
-  if (section == "electronics") return "Accessories";
+  if (section === "electronics") return "Accessories";
 
   return section;
 };

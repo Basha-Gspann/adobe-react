@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Sass/Cart.scss";
-import { BiPencil,BiTrash,BiHeart,BiLockAlt } from 'react-icons/bi';
+import { BiPencil,BiTrash,BiHeart } from 'react-icons/bi';
 import { FiLock } from 'react-icons/fi';
 import Pay from '../../Images/pay1.png'
 import Accordian from "../Products/Accordian";
@@ -24,7 +24,7 @@ export default function Basket(props) {
               <div className="aem-GridColumn aem-GridColumn--default--6 badge">
                 <div className="product">
                   <div>
-                    <img src={item.image} height="180px" width="160px" />
+                    <img src={item.image} height="180px" width="160px" alt="" />
                   </div>
                   <div>
                     <h5>{item.title.substring(0, 18)}</h5>
