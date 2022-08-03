@@ -38,6 +38,15 @@
 
 // Media Quries
 
+@media only screen and (min-width: 1024px) and  (max-width: 1200px) {
+
+  .herosection .cardr h1 {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+}
+
 @media only screen and (max-width: 768px) {
   .herosection .desk {
     display: none;
