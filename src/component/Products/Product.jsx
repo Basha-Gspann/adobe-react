@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import "../../Sass/Product.scss";
 import Colorone from "../../Images/color-1.png";
@@ -103,9 +103,9 @@ const Product = (props) => {
               <strong>(175)</strong>
               <p className="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor labore et dolore magna. <a href="">Read more</a>
+                eiusmod tempor labore et dolore magna. <a href="/">Read more</a>
               </p>
-              <hr></hr>
+              <hr />
 
               <div className="product-colors">
                 <h5>Color</h5>
