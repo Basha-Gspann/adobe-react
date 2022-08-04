@@ -69,7 +69,7 @@ function App() {
         <Route exact path="/payment" element={<Payment />} />
         <Route exact path="/finalCeck" element={<FinalCeck />} />
         <Route exact path="/successful" element={<Successful />} />
-        <Route exact path="/products/:id" element={<Product onAdd={onAdd} />} />
+        <Route exact path="/products/:id" element={<Product cartItems={cartItems} category={category} onAdd={onAdd} onRemove={onRemove} />} />
         <Route
           exact
           path="/cart"

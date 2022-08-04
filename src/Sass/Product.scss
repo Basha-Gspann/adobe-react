@@ -107,6 +107,34 @@
   width: 145%;
 }
 
+
+.group {
+  padding: 1rem 0;
+
+  .border {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 2px #6c757d solid !important;
+    color: $black;
+    border-radius: 2rem;
+  }
+
+  .quant {
+    border: 2px #6c757d solid;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 6px !important;
+    padding: 4px 20px;
+    margin-top: 0.4rem;
+  }
+
+  p:last-child {
+    font-size: 0.9rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .pro-img {
     display: block;
@@ -117,7 +145,7 @@
     width: 100%;
 }
   .product-details p:first-child {
-    display: none;
+    // display: none;
 }
 .product-details h1 {
   padding-top: 3rem;
