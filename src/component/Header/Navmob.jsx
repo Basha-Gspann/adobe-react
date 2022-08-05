@@ -2,6 +2,7 @@ import React from "react";
 import "../../Sass/Navmob.scss";
 import { FiShoppingBag, FiSearch } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+import Logo from '../../Images/logo.png'
 
 const categories = [
   {
@@ -38,7 +39,8 @@ const Navmob = ({ setCategory, selectedCategory, ...props }) => {
           <div className="logo">
             {/* <span className="">Cart  < FiSearch /><FiShoppingBag/></span> */}
             <div className="logomob">
-            <h2><a href="/"><span>V</span>ENIA</a></h2>
+            {/* <h2><a href="/"><span>V</span>ENIA</a></h2> */}
+            <NavLink to='/'><img src={Logo} alt="" /></NavLink>
             </div>
             <NavLink to="/login" className="loginmob">
               <FiSearch size={25}/>&nbsp;&nbsp;&nbsp;&nbsp;

@@ -65,11 +65,15 @@ body {
   display: block;
   height: 32px;
   width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
+  top: 8px;
+  left: 18px;
+  z-index: 999;
   opacity: 0;
   cursor: pointer;
+}
+
+input[type="checkbox"]:before{
+  display: none;
 }
 
 .nav-container .hamburger-lines {
@@ -79,7 +83,7 @@ body {
   position: absolute;
   top: 17px;
   left: 20px;
-  z-index: 2;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,7 +94,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: $white;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -119,7 +123,7 @@ body {
   padding-left: 50px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
-  z-index: 999;
+  z-index: 998;
 }
 
 .navbar .menu-items li {
@@ -176,9 +180,14 @@ body {
   display: none;
 }
 
+svg{
+  color: $white;
+}
+
 @media only screen and (max-width: 993px) {
   .navmob {
     display: block !important;
+    background-color: $primarycolor;
   }
   .navmob .logo {
     padding: 0px 28rem;

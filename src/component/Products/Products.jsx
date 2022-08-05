@@ -41,8 +41,8 @@ const Products = ({ category }) => {
       <>
         <div className="col-md-3">
           <Skeleton height={350} />
-          <Skeleton height={350} />
-          <Skeleton height={350} />
+          {/* <Skeleton height={350} />
+          <Skeleton height={350} /> */}
         </div>
       </>
     );
