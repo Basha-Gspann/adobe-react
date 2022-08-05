@@ -1,20 +1,20 @@
 @import "../Sass/variables.scss";
 @import "../Sass//mixin.scss";
 
-.navdesk {
+.navdesk{
   background-color: $primarycolor;
   color: $white;
   padding-top: 0.5rem;
 }
 .navbar {
   padding-bottom: 0 !important;
-  .logo {
-    position: relative;
+  .logo{
+  position: relative;
   }
-  .logo img {
+  .logo img{
     width: 80%;
     margin-right: -21rem;
-  }
+}
   .logo h2 {
     font-size: 1.6rem;
     // font-family: "Righteous", cursive;
@@ -24,7 +24,7 @@
     // font-weight: bold;
     letter-spacing: 6px;
 
-    a {
+    a{
       color: $white;
     }
   }
@@ -43,7 +43,7 @@
   ul li {
     font-weight: 400;
     color: $white;
-    a {
+    a{
       color: $white;
     }
   }
@@ -68,7 +68,7 @@
 
       button {
         color: $white;
-        background-color: #ff8243;
+        background-color: #FF8243;
         // border: 2px solid;
         padding: 0px 6px;
         border-radius: 12px;
@@ -88,47 +88,41 @@
   font-family: "Source Serif Pro", serif;
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width:993px) {
   .navdesk {
-    display: none;
-  }
+        display: none;
+      }
 }
 
-.navdesk svg {
-  color: $white;
+.navdesk svg{
+color: $white;
 }
 
-// #hover-underline-animation {
-//   display: inline-block;
-//   position: relative;
-// }
-
-// #hover-underline-animation:after {
-//   content: '';
-//   position: absolute;
-//   width: 100%;
-//   transform: scaleX(0);
-//   height: 3px;
-//   bottom: 0;
-//   left: 0;
-//   background-color: $white;
-//   transform-origin: bottom right;
-//   transition: transform 0.25s ease-out;
-// }
-
-// #hover-underline-animation:hover:after {
-//   transform: scaleX(1);
-//   transform-origin: bottom left;
-// }
-
-li :active {
-  background-color: initial;
-  border-bottom: 0.43rem ridge #ffd07f;
-  border-radius: 0 !important;
+#hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-@media only screen and (max-width: 1024px) {
+#hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: $white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media only screen and (max-width:1024px){
   .navbar .navbar-nav {
     padding-left: 0rem;
-  }
+}
 }
