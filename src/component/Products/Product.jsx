@@ -11,12 +11,22 @@ import { BsStarFill, BsStar } from "react-icons/bs";
 import { BiShareAlt, BiSitemap } from "react-icons/bi";
 import { TbLeaf } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
+import {getProductData} from "../Api/ProductsApi";
 
 const Product = (props) => {
   const { onAdd,onRemove, cartItems } = props;
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
+
+// fetchproducts (() => {
+//   const getProduct = async () => {
+//     const ProductData = await getProductData();
+//     console.log(ProductData, 'inproduct page');
+//   };
+//   getProduct();
+// })
+
 
   useEffect(() => {
     const getProduct = async () => {

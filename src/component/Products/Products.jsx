@@ -4,6 +4,7 @@ import Skeleton from "react-loading-skeleton";
 import ReactPaginate from "react-paginate";
 import "../../Sass/Products.scss";
 import { FiHeart } from "react-icons/fi";
+import { getProductData } from "../Api/ProductsApi";
 
 const itemsPerPage = 12;
 
@@ -13,10 +14,20 @@ const Products = ({ category }) => {
   const [loading, setLoading] = useState(false);
   let componentMounted = true;
 
+  // fetchproducts (() => {
+//   const getProduct = async () => {
+//     const ProductData = await getProductData();
+//     console.log(ProductData, 'inproduct page');
+//   };
+//   getProduct();
+// })
+
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products");
+      const response = await getProductData();
+      
+      console.log(this.state)
       if (componentMounted) {
         setData(await response.clone().json());
         const data = await response.json();
