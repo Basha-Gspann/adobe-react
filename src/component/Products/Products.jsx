@@ -25,9 +25,10 @@ const Products = ({ category }) => {
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
-      const response = await getProductData();
+      const response = await fetch("https://fakestoreapi.com/products");
+      // const response = await getProductData();
       
-      console.log(this.state)
+      // console.log(this.state)
       if (componentMounted) {
         setData(await response.clone().json());
         const data = await response.json();

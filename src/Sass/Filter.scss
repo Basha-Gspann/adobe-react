@@ -65,6 +65,33 @@
   input[type="checkbox"]:before {
     color: #91959C !important;
 }
+
+.filter input[type="checkbox"]:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f096";
+  opacity: 1 !important;
+  margin-top: -25px;
+  appearance: none;
+  background: #fff;
+  color: #1F39FA;
+}
+
+.filter input[type="checkbox"]:checked:before {
+  content: "\f046";
+  color: #E26A2C;
+}
+
+.filter input[type="checkbox"] {
+  vertical-align:middle;
+  font-size: 28px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
   
   /* Colors */
   
