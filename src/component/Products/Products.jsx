@@ -5,6 +5,7 @@ import ReactPaginate from "react-paginate";
 import "../../Sass/Products.scss";
 import { FiHeart } from "react-icons/fi";
 import { getProductData } from "../Api/ProductsApi";
+import store from "../../redux/store";
 
 const itemsPerPage = 12;
 
@@ -25,14 +26,16 @@ const Products = ({ category }) => {
   useEffect(() => {
     const getProducts = async () => {
       setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products");
-      // const response = await getProductData();
+      // const response = await fetch("https://fakestoreapi.com/products");
+      const response = await getProductData();
       
-      // console.log(this.state)
+
       if (componentMounted) {
-        setData(await response.clone().json());
-        const data = await response.json();
-        setFilter(data);
+        const proddata = store.getState();
+        setData(proddata.allProducts.products);
+
+        const data = proddata.allProducts.products;
+        setFilter(proddata.allProducts.products);
         setLoading(false);
       }
       return () => {

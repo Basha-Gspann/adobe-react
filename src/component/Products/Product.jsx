@@ -12,6 +12,7 @@ import { BiShareAlt, BiSitemap } from "react-icons/bi";
 import { TbLeaf } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import {getProductData} from "../Api/ProductsApi";
+import store from '../../redux/store';
 
 const Product = (props) => {
   const { onAdd,onRemove, cartItems } = props;
@@ -28,14 +29,18 @@ const Product = (props) => {
 // })
 
 
-  useEffect(() => {
-    const getProduct = async () => {
-      setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-      setProduct(await response.json());
-      setLoading(false);
-    };
-    getProduct();
+useEffect(() => {
+  const getProduct = async () => {
+    setLoading(true);
+    const proddata= store.getState()
+    const allProducts = proddata.allProducts.products
+    const productitem = allProducts.filter(item => {
+        return item.id == id;
+      })
+    setProduct(productitem[0]);
+    setLoading(false);
+  };
+  getProduct();
   }, []);
 
   const Loading = () => {

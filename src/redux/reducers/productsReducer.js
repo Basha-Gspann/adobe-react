@@ -3,10 +3,10 @@ const intialState = {
   products: []
 };
 
-export const productsReducer = (state = intialState, { type, payload }) => {
-  switch (type) {
+export const allProductsReducer = (state = intialState, action) => {
+  switch (action.type) {
     case ActionTypes.GET_PRODUCTS:
-      return { ...state, products: payload };
+      return Object.assign({}, state, { products: action.payload });
     default:
       return state;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../Sass/Checkout.scss";
+// import {reduxForm} from 'redux-form';
 
 const Info = () => {
   return (
