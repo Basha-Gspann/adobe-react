@@ -11,7 +11,7 @@ import Signin from "./component/Header/Signin";
 import Signup from "./component/Header/Signup";
 import Navmob from "./component/Header/Navmob";
 import Landing from "./component/LandingPage/Landing";
-import Info from "./component/Checkout/Info";
+import Info from "./component/Checkout/Information";
 import Shipping from "./component/Checkout/Shipping";
 import Payment from "./component/Checkout/Payment";
 import FinalCeck from "./component/Checkout/FinalCeck";
