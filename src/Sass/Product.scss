@@ -135,6 +135,10 @@
   }
 }
 
+.product-details svg ,.Producttitle svg{
+  color: $black;
+}
+
 @media only screen and (max-width: 768px) {
   .pro-img {
     display: block;
