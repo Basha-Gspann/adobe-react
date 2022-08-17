@@ -2,9 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../Sass/Checkout.scss";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-// import {reduxForm} from 'redux-form';
 
 const Info = () => {
 
