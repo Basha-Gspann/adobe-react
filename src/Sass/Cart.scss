@@ -149,6 +149,10 @@
   font-size: 1em;
 }
 
+.cart .icon p svg {
+  color: $black;
+}
+
 // Media Quaries
 
 @media only screen and (max-width: 768px) {
