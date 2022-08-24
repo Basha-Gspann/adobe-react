@@ -93,7 +93,7 @@ const Products = ({ category }) => {
     return (
       <>
         <div className="aem-Grid aem-Grid--12">
-          <div className="aem-GridColumn aem-GridColumn--default--3">
+          {/* <div className="aem-GridColumn aem-GridColumn--default--3">
           <div className="filter">
           <h4>Filters</h4>
             <hr />
@@ -146,8 +146,8 @@ const Products = ({ category }) => {
             </li>
           </ul>
         </div>
-          </div>
-          <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+          </div> */}
+          <div className="">
           <div className="row">
           {currentItems?.map((product) => {
           return (

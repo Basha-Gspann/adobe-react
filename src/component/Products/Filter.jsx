@@ -1,17 +1,36 @@
-import React from 'react';
+import React from "react";
 import "../../Sass/Filter.scss";
+import { NavLink } from "react-router-dom";
 
+const categories = [
+  {
+    filter: "women's clothing",
+    displayName: <NavLink to="/home">Women</NavLink>,
+  },
+  {
+    filter: "men's clothing",
+    displayName: <NavLink to="/home">Men</NavLink>,
+  },
+  {
+    filter: "jewelery",
+    displayName: <NavLink to="/home">Smart Gear</NavLink>,
+  },
+  {
+    filter: "electronics",
+    displayName: <NavLink to="/home">Accessories</NavLink>,
+  },
+];
 
-function Filter(filterProduct) {
-    return (
-<div className="container filter">
+const Filter = ({ filterProduct, setCategory, selectedCategory }) => {
+  return (
+    <div className="container filter">
       <div>
-            <h4>Filters</h4>
-            <hr />
-          </div>
+        <h4>Filters</h4>
+        <hr />
+      </div>
 
-          <div>
-          <ul>
+      <div>
+        {/* <ul>
                 <li>
                 <input onClick={() =>filterProduct("men's clothing")} type="checkbox" id="option" name="option" value="option" />
             <label>Women</label>
@@ -31,9 +50,26 @@ function Filter(filterProduct) {
                 <input onClick={() =>filterProduct("electronics")} type="checkbox" id="option" name="option" value="option" />
             <label>Accessories</label>
                 </li>
-            </ul>
-          </div>
-          {/* <div>
+            </ul> */}
+
+        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          {categories?.map((category) => (
+            <li>
+              <input type="checkbox"
+                id="option"
+                name="option"
+                value="option" className={`nav-link ${
+                category.filter === selectedCategory ? "active" : ""
+              } `}
+              aria-current="page"
+              onClick={() => setCategory(category.filter)}
+id="hover-underline-animation" />
+              <label>{category.displayName}</label>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* <div>
             <h6>Size</h6>
             <ul>
                 <li>
@@ -95,8 +131,8 @@ function Filter(filterProduct) {
             <hr />
           </div> */}
 
-          <>
-            {/* <div>
+      <>
+        {/* <div>
               <h6>Color</h6>
             </div>
             <div className="filter-color aem-Grid aem-Grid--12">
@@ -144,10 +180,10 @@ function Filter(filterProduct) {
                 <div className="color9"></div>
                 </div>
             </div> */}
-          </>
+      </>
 
-          {/* <hr /> */}
-          {/* <div>
+      {/* <hr /> */}
+      {/* <div>
             <h6>Brand</h6>
             <ul>
                 <li>
@@ -196,7 +232,7 @@ function Filter(filterProduct) {
             <hr />
           </div> */}
     </div>
-    )
-}
+  );
+};
 
-export default Filter
+export default Filter;
