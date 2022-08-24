@@ -60,7 +60,7 @@ function App() {
       />
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route exact path="/home" element={<Home category={category} />} />
+        <Route exact path="/home" element={<Home category={category} setCategory={setCategory} selectedCategory={category} />} />
         <Route exact path="/products" element={<Products category="" />} />
         <Route exact path="/signin" element={<Signin />} />
         <Route exact path="/signup" element={<Signup />} />
