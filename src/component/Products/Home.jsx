@@ -11,7 +11,7 @@ function Home({category}) {
         <div>
         <Breadcrum/>
         </div>
-        <div className="aem-Grid aem-Grid--12 container">
+        {/* <div className="aem-Grid aem-Grid--12 container">
         <div className="aem-GridColumn aem-GridColumn--default--3">
             
             <Filter />
@@ -19,6 +19,9 @@ function Home({category}) {
         <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
          <Products category={category} />
         </div>
+        </div> */}
+        <div className='container'>
+        <Products category={category} />
         </div>
         </>
        

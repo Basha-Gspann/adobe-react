@@ -2,14 +2,38 @@ import React from 'react';
 import "../../Sass/Filter.scss";
 
 
-function Filter() {
+function Filter(filterProduct) {
     return (
 <div className="container filter">
       <div>
             <h4>Filters</h4>
             <hr />
           </div>
+
           <div>
+          <ul>
+                <li>
+                <input onClick={() =>filterProduct("men's clothing")} type="checkbox" id="option" name="option" value="option" />
+            <label>Women</label>
+                </li>
+
+                <li>
+                <input onClick={() =>filterProduct("women's clothing")} type="checkbox" id="option" name="option" value="option" />
+            <label>Men</label>
+                </li>
+
+                <li>
+                <input onClick={() =>filterProduct("jewelery")} type="checkbox" id="option" name="option" value="option" />
+            <label>Smart Gear</label>
+                </li>
+
+                <li>
+                <input onClick={() =>filterProduct("electronics")} type="checkbox" id="option" name="option" value="option" />
+            <label>Accessories</label>
+                </li>
+            </ul>
+          </div>
+          {/* <div>
             <h6>Size</h6>
             <ul>
                 <li>
@@ -69,7 +93,7 @@ function Filter() {
                 </li>
             </ul>
             <hr />
-          </div>
+          </div> */}
 
           <>
             {/* <div>
@@ -123,7 +147,7 @@ function Filter() {
           </>
 
           {/* <hr /> */}
-          <div>
+          {/* <div>
             <h6>Brand</h6>
             <ul>
                 <li>
@@ -170,7 +194,7 @@ function Filter() {
 
             </ul>
             <hr />
-          </div>
+          </div> */}
     </div>
     )
 }
