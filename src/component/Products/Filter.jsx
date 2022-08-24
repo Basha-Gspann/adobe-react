@@ -3,13 +3,14 @@ import "../../Sass/Filter.scss";
 import { NavLink } from "react-router-dom";
 
 const categories = [
-  {
-    filter: "women's clothing",
-    displayName: <NavLink to="/home">Women</NavLink>,
-  },
+  
   {
     filter: "men's clothing",
     displayName: <NavLink to="/home">Men</NavLink>,
+  },
+  {
+    filter: "women's clothing",
+    displayName: <NavLink to="/home">Women</NavLink>,
   },
   {
     filter: "jewelery",
