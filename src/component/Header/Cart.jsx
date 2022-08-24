@@ -46,7 +46,7 @@ export default function Basket(props) {
 
               <div className="aem-GridColumn aem-GridColumn--default--3 icon">
                 <p><BiPencil size={18}/> Edit item</p>
-                <p><BiTrash size={18}/> Remove&nbsp;</p>
+                <p onClick={() => onRemove(item)}><BiTrash size={18}/> Remove&nbsp;</p>
                 <p><BiHeart size={18}/> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
               </div>
             </div>
